@@ -15,35 +15,6 @@ module.exports = class AdsenseContentManager {
     return { title, articles, advBlocks, categories };
   }
 
-  get randomPageResponseBody() {
-    const
-      { articles } = this.site,
-      i = this.getRandomInt(),
-      prev = articles[i - 1],
-      article = articles[i],
-      next = articles[i + 1],
-      navigation = {};
-
-    if (prev) {
-      navigation.prev = {
-        href: prev.pathname,
-        header: prev.header
-      };
-    }
-    if (next) {
-      navigation.next = {
-        href: next.pathname,
-        header: next.header
-      };
-    }
-
-    return {
-      ...this.postPageResponseBody,
-      article,
-      navigation
-    };
-  }
-
 
   constructor(collection) {
     this.pullOutDataFromCollection(collection);
@@ -54,7 +25,7 @@ module.exports = class AdsenseContentManager {
     this.site = await collection.findOne({});
   }
 
-  getRandomInt() {
+  getRandomArticleIndex() {
     return Math.floor(
       Math.random() * this.site.articles.length
     );

@@ -3,7 +3,7 @@ module.exports = class AdsenseRouter {
   get randomEndpoint() {
     const
       { contentManager } = this,
-      i = contentManager.getRandomInt();
+      i = contentManager.getRandomArticleIndex();
     return `/${contentManager.site.articles[i].pathname}`;
   }
 
@@ -15,6 +15,12 @@ module.exports = class AdsenseRouter {
 
 
   setRequestControllers() {
+    this.app.get('/', (req, res) => {
+      res.render(
+        'index',
+        this.contentManager.indexPageResponseBody
+      );
+    });
     this.app.get('/blog', (req, res) => {
       res.render(
         'blog',
@@ -25,12 +31,6 @@ module.exports = class AdsenseRouter {
       res.render(
         'post',
         this.contentManager.postPageResponseBody
-      );
-    });
-    this.app.get('/', (req, res) => {
-      res.render(
-        'index',
-        this.contentManager.indexPageResponseBody
       );
     });
     return this;
@@ -46,7 +46,6 @@ module.exports = class AdsenseRouter {
         article = articles[i],
         next = articles[i + 1],
         navigation = {};
-
       if (prev) {
         navigation.prev = {
           href: prev.pathname,
@@ -59,7 +58,6 @@ module.exports = class AdsenseRouter {
           header: next.header
         };
       }
-
       this.app.get(`/${article.pathname}`, (req, res) => {
         res.render(
           'post', {
