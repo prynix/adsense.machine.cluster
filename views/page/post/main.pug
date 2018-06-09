@@ -1,16 +1,15 @@
-// Latest Posts
+- var { next, prev } = navigation;
 main.post.blog-post.col-lg-8
   .container
     .post-single
       .post-thumbnail
-        img.img-fluid(src="img/blog-post-3.jpeg" alt="...")
+        img.img-fluid(src=""+article.img  alt=""+article.header)
       .post-details
         .post-meta.d-flex.justify-content-between
           .category
-            a(href="#") Business
-            a(href="#") Financial
-        h1
-          | Diversity in Engineering: The Effect on Questions
+            each categoriy in article.categories
+              a(href="#") #{categoriy}
+        h1 #{article.header}
           a(href="#")
             i.fa.fa-bookmark-o
         .post-footer.d-flex.align-items-center.flex-column.flex-sm-row
@@ -32,35 +31,21 @@ main.post.blog-post.col-lg-8
 
 
         .post-body
-          p.lead
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          p
-            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          p
-            img.img-fluid(src="img/featured-pic-3.jpeg" alt="...")
-          h3 Lorem Ipsum Dolor
-          p
-            | div Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda temporibus iusto voluptates deleniti similique rerum ducimus sint ex odio saepe. Sapiente quae pariatur ratione quis perspiciatis deleniti accusantium
-          blockquote.blockquote
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-            footer.blockquote-footer
-              | Someone famous in
-              cite(title="Source Title") Source Title
-          p
-            | quasi nam. Libero dicta eum recusandae, commodi, ad, autem at ea iusto numquam veritatis, officiis. Accusantium optio minus, voluptatem? Quia reprehenderit, veniam quibusdam provident, fugit iusto ullam voluptas neque soluta adipisci ad.
-
+          each paragraph in article.paragraphs
+            p.lead #{paragraph}
 
         .posts-nav.d-flex.justify-content-between.align-items-stretch.flex-column.flex-md-row
-          a.prev-post.text-left.d-flex.align-items-center(href="#")
-            .icon.prev
-              i.fa.fa-angle-left
-            .text
-              strong.text-primary Предыдущая статья
-              h6 I Bought a Wedding Dress.
-          a.next-post.text-right.d-flex.align-items-center.justify-content-end(href="#")
-            .text
-              strong.text-primary Следующая статья 
-              h6 I Bought a Wedding Dress.
-            .icon.next
-              i.fa.fa-angle-right
+          if prev
+            a.prev-post.text-left.d-flex.align-items-center(href=""+prev.href)
+              .icon.prev
+                i.fa.fa-angle-left
+              .text
+                strong.text-primary Предыдущая статья
+                h6 #{prev.header}
+          if next
+            a.next-post.text-right.d-flex.align-items-center.justify-content-end(href=""+next.href)
+              .text
+                strong.text-primary Следующая статья 
+                h6 #{next.header}
+              .icon.next
+                i.fa.fa-angle-right

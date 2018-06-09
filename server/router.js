@@ -18,7 +18,7 @@ module.exports = class AdsenseRouter {
         this.contentManager.postPageResponseBody
       );
     });
-    this.app.get('*', (req, res) => {
+    this.app.get('/', (req, res) => {
       res.render(
         'index',
         this.contentManager.indexPageResponseBody
@@ -28,6 +28,39 @@ module.exports = class AdsenseRouter {
   }
 
   setLoopRequestControllersByEveryArticle() {
+    const
+      { articles } = this.contentManager.site,
+      { length } = articles;
+    for (let i = 0; i < length; i++) {
+      const
+        prev = articles[i - 1],
+        article = articles[i],
+        next = articles[i + 1],
+        navigation = {};
+
+      if (prev) {
+        navigation.prev = {
+          href: prev.pathname,
+          header: prev.header
+        };
+      }
+      if (next) {
+        navigation.next = {
+          href: next.pathname,
+          header: next.header
+        };
+      }
+      
+      this.app.get(`/${article.pathname}`, (req, res) => {
+        res.render(
+          'post', {
+            ...this.contentManager.postPageResponseBody,
+            article,
+            navigation
+          }
+        );
+      });
+    }
     return this;
   }
 
@@ -42,9 +75,11 @@ module.exports = class AdsenseRouter {
 
 
   init() {
-    this
-      .setRequestControllers()
-      .setLoopRequestControllersByEveryArticle()
-      .setRandomPlugin();
+    setTimeout(() => {
+      this
+        .setRequestControllers()
+        .setLoopRequestControllersByEveryArticle()
+        .setRandomPlugin();
+    }, 999);
   }
 }
