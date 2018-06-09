@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb')
 /*
 *   @see
-*   http://mongodb.github.io/node-mongodb-native/3.0/api/
+*   http://mongodb.github.io/node-mongodb-native/3.0/
 */
 module.exports = class MongoDBManager {
   connect({ uri, options }) {

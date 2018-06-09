@@ -11,9 +11,8 @@ module.exports = class AdsenseContentManager {
   }
 
   get postPageResponseBody() {
-    return {
-      articles: []
-    };
+    const { title, description, info, articles } = this.site;
+    return { title, description, info, articles };
   }
 
   get randomPageResponseBody() {
@@ -45,6 +44,7 @@ module.exports = class AdsenseContentManager {
 
   async pullOutDataFromCollection(collection) {
     this.site = await collection.findOne({});
+    console.log(this.site);
   }
 
   static getRandomInt(min, max) {
