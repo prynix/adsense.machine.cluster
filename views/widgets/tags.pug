@@ -2,13 +2,6 @@
   header
     h3.h6 Облако тегов
   ul.list-inline
-    li.list-inline-item
-      a.tag(href="#") #Business
-    li.list-inline-item
-      a.tag(href="#") #Technology
-    li.list-inline-item
-      a.tag(href="#") #Fashion
-    li.list-inline-item
-      a.tag(href="#") #Sports
-    li.list-inline-item
-      a.tag(href="#") #Economy
+    each category in categories
+      li.list-inline-item
+        a.tag(href="#") ##{category}

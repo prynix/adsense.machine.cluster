@@ -2,42 +2,17 @@
   header
     h3.h6 Свежие статьи
   .blog-posts
-    a(href="#")
-      .item.d-flex.align-items-center
-        .image
-          img.img-fluid(src="img/small-thumbnail-1.jpg" alt="...")
-        .title
-          strong Alberto Savoia Can Teach You About
-          .d-flex.align-items-center
-            .views
-              i.icon-eye
-              |  500
-            .comments
-              i.icon-comment
-              | 12
-    a(href="#")
-      .item.d-flex.align-items-center
-        .image
-          img.img-fluid(src="img/small-thumbnail-2.jpg" alt="...")
-        .title
-          strong Alberto Savoia Can Teach You About
-          .d-flex.align-items-center
-            .views
-              i.icon-eye
-              |  500
-            .comments
-              i.icon-comment
-              | 12
-    a(href="#")
-      .item.d-flex.align-items-center
-        .image
-          img.img-fluid(src="img/small-thumbnail-3.jpg" alt="...")
-        .title
-          strong Alberto Savoia Can Teach You About
-          .d-flex.align-items-center
-            .views
-              i.icon-eye
-              |  500
-            .comments
-              i.icon-comment
-              | 12
+    each article in articles
+      a(href=""+article.pathname)
+        .item.d-flex.align-items-center
+          .image
+            img.img-fluid(src=""+article.img  alt=""+article.header)
+          .title
+            strong #{article.header}
+            .d-flex.align-items-center
+              .views
+                i.icon-eye
+                |  500
+              .comments
+                i.icon-comment
+                | 12

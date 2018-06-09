@@ -6,13 +6,13 @@ module.exports = class AdsenseContentManager {
   }
 
   get blogPageResponseBody() {
-    const { title, articles } = this.site;
-    return { title, articles };
+    const { title, articles, categories } = this.site;
+    return { title, articles, categories };
   }
 
   get postPageResponseBody() {
-    const { title, description, info, articles } = this.site;
-    return { title, description, info, articles };
+    const { title, description, info, articles, categories } = this.site;
+    return { title, description, info, articles, categories };
   }
 
   get randomPageResponseBody() {

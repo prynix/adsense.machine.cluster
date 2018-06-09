@@ -26,11 +26,11 @@ section.featured-posts.no-padding-top
                     i.icon-comment
                     | 12
           .image.col-lg-5
-            img(src="img/featured-pic-1.jpeg" alt="...")
+            img(src=""+article.img  alt=""+article.header)
       else
         .row.d-flex.align-items-stretch
           .image.col-lg-5
-            img(src="img/featured-pic-2.jpeg" alt="...")
+            img(src="" + article.img  alt="" + article.header)
           .text.col-lg-7
             .text-inner.d-flex.align-items-center
               .content
