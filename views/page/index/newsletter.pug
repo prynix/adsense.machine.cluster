@@ -1,13 +1,15 @@
 section.newsletter
   .container
     .row
-      .col-md-6
-        h2 Подписаться на новостную рассылку
-        p.text-big
-          | Будьте первым, кто получит эксклюзивные предложения и последние новости о наших продуктах и услугах.
-      .col-md-8
-        .form-holder
-          form(action="#")
-            .form-group
-              input#email(type="email" name="email" placeholder="Введите адрес электронной почты")
-              button.submit(type="submit") Подписаться
+      .col-lg-8
+        .col-md-8
+          h2 Подписаться на новостную рассылку
+          p.text-big
+            | Будьте первым, кто получит эксклюзивные предложения и последние новости о наших продуктах и услугах.
+        .col-md-10
+          .form-holder
+            form(action="#")
+              .form-group
+                input#email(type="email" name="email" placeholder="Введите адрес электронной почты")
+                button.submit(type="submit") Подписаться
+      .col-lg-4 !{advBlocks[1]}

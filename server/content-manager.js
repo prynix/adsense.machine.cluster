@@ -1,18 +1,18 @@
 module.exports = class AdsenseContentManager {
 
   get indexPageResponseBody() {
-    const { title, description, info, articles } = this.site;
-    return { title, description, info, articles };
+    const { title, description, info, advBlocks, articles } = this.site;
+    return { title, description, info, advBlocks, articles };
   }
 
   get blogPageResponseBody() {
-    const { title, articles, categories } = this.site;
-    return { title, articles, categories };
+    const { title, articles, advBlocks, categories } = this.site;
+    return { title, articles, advBlocks, categories };
   }
 
   get postPageResponseBody() {
-    const { title, articles, categories } = this.site;
-    return { title, articles, categories };
+    const { title, articles, advBlocks, categories } = this.site;
+    return { title, articles, advBlocks, categories };
   }
 
   get randomPageResponseBody() {
@@ -36,6 +36,7 @@ module.exports = class AdsenseContentManager {
         header: next.header
       };
     }
+
     return {
       ...this.postPageResponseBody,
       article,

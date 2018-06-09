@@ -80,6 +80,6 @@ module.exports = class AdsenseRouter {
         .setRequestControllers()
         .setLoopRequestControllersByEveryArticle()
         .setRandomPlugin();
-    }, 999);
+    }, 1500);
   }
 }
