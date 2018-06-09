@@ -1,6 +1,6 @@
 exports.config = {
   mongodb: {
-    uri: 'mongodb://127.0.0.1:27018/adsense',
+    uri: 'mongodb://127.0.0.1:27017/adsense',
     options: {
       poolSize: 10
     }

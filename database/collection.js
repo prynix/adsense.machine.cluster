@@ -2,7 +2,7 @@ const { ObjectID } = require('mongodb');
 
 
 
-module.exports = class BaseMongoCollection {
+module.exports = class MongoCollection {
   constructor(collection) {
     this.collection = collection;
   }

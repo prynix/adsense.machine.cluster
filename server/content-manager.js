@@ -1,18 +1,13 @@
 module.exports = class AdsenseContentManager {
 
   get indexPageResponseBody() {
-    return {
-      title: "1lifestyle",
-      description: "Барбер клуб для джентельменов",
-      info: "Лучшие парикмахерские блоги из тысяч лучших журналов Barber в нашем индексе, используя поисковые и социальные показатели. Данные будут обновляться один раз в неделю.",
-      articles: []
-    };
+    const { title, description, info, articles } = this.site;
+    return { title, description, info, articles };
   }
 
   get blogPageResponseBody() {
-    return {
-      articles: []
-    };
+    const { title, articles } = this.site;
+    return { title, articles };
   }
 
   get postPageResponseBody() {
@@ -44,12 +39,12 @@ module.exports = class AdsenseContentManager {
 
 
   constructor(collection) {
-    this.collection = collection;
+    this.pullOutDataFromCollection(collection);
   }
 
 
-  pullOutArticles() {
-    this.collection.getAllArticles()
+  async pullOutDataFromCollection(collection) {
+    this.site = await collection.findOne({});
   }
 
   static getRandomInt(min, max) {

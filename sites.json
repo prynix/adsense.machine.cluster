@@ -2,15 +2,19 @@
   {
     "port": 3000,
     "domain": "http://1lifestyle.ru/",
-    "title": "1lifestyle",
+    "title": "lifestyle",
     "description": "Барбер клуб для джентельменов",
-    "info":"Лучшие парикмахерские блоги из тысяч лучших журналов Barber в нашем индексе, используя поисковые и социальные показатели. Данные будут обновляться один раз в неделю.",
+    "info": "Лучшие парикмахерские блоги из тысяч лучших журналов Barber в нашем индексе, используя поисковые и социальные показатели. Данные будут обновляться один раз в неделю.",
     "categories": [
       "барберы",
       "барбершоп",
       "усы",
       "бороды"
     ],
-    "advBlocks": []
+    "advBlocks": [
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fbsobkpdg --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"2826389459\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fbwrpylpurylmfbvxcbxzd --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"7587761540\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- 56gs1gn6s51b65 --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"2650419190\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
+    ]
   }
 ]

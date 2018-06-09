@@ -1,13 +1,13 @@
-const
+let
   cluster = require('cluster'),
   numCPUs = require('os').cpus().length,
   log4js = require('log4js'),
   AdsenseServer = require('./server'),
   MongoDBManager = require('./database'),
-  { config } = require('./config'),
   sites = require('./sites.json'),
-  { length } = sites;
-let DBManager;
+  { length } = sites,
+  { config } = require('./config'),
+  DB;
 /*
 *   todo error handling & notify
 */
@@ -19,8 +19,8 @@ module.exports = class AdsenseMachineApp {
   }
 
   static async initDB() {
-    DBManager = new MongoDBManager();
-    await DBManager.init(config.mongodb);
+    let mongo = new MongoDBManager();
+    DB = await mongo.init(config.mongodb);
   }
 
   static initClusterServers() {
@@ -33,10 +33,9 @@ module.exports = class AdsenseMachineApp {
       });
     } else {
       for (let i = 0; i < length; i++) {
-        const { domain, port, advBlocks } = sites[i];
-        console.log(domain, port);
+        const { title, port } = sites[i];
         process.nextTick(function () {
-          new AdsenseServer(domain, port, DBManager).bootstrap();
+          new AdsenseServer(title, port, DB).bootstrap();
         });
       }
     }
