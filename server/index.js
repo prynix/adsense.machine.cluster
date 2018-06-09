@@ -1,27 +1,39 @@
 const
   { join } = require('path'),
   express = require('express'),
-  AdsenseRouter = require('./router');
+  AdsenseRouter = require('./router'),
+  AdsenseContentManager = require('./content-manager');
 
 
 
 module.exports = class AdsenseServer {
-  constructor(domain, port) {
+  constructor(domain, port, db) {
     this.domain = domain;
     this.port = port;
+    this.db = db;
     this.app = express();
   }
-  /*
-  *
-  */
+
+
   setup() {
     this.app.set("view engine", "pug");
     this.app.set("views", join(__dirname, '../', "views"));
     this.app.use(express.static('assets'));
+    return this;
+  }
+
+  prepareContentManager() {
+    return new AdsenseContentManager(
+      this.db.collection(this.domain)
+    )
   }
 
   route() {
-    new AdsenseRouter(this.app).setup();
+    const
+      contentManager = this.prepareContentManager(),
+      router = new AdsenseRouter(this.app, contentManager);
+    router.init();
+    return this;
   }
 
   listen() {
@@ -30,12 +42,12 @@ module.exports = class AdsenseServer {
       console.log(`\n Adsense site  ${domain}  run on port  ${port}!`);
     });
   }
-  /*
-  *
-  */
+
+
   bootstrap() {
-    this.setup();
-    this.route();
-    this.listen();
+    this
+      .setup()
+      .route()
+      .listen();
   }
 }

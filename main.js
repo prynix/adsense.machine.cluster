@@ -7,6 +7,7 @@ const
   { config } = require('./config'),
   sites = require('./sites.json'),
   { length } = sites;
+let DBManager;
 /*
 *   todo error handling & notify
 */
@@ -17,11 +18,9 @@ module.exports = class AdsenseMachineApp {
     log4js.getLogger().setLevel('ERROR');
   }
 
-  static initDB() {
+  static async initDB() {
     DBManager = new MongoDBManager();
-    return DBManager.init(config.mongodb).then(() => {
-      friendListCollection = new FriendListMongoCollection(mongodbManager);
-    });
+    await DBManager.init(config.mongodb);
   }
 
   static initClusterServers() {
@@ -37,16 +36,16 @@ module.exports = class AdsenseMachineApp {
         const { domain, port, advBlocks } = sites[i];
         console.log(domain, port);
         process.nextTick(function () {
-          new AdsenseServer(domain, port).bootstrap();
+          new AdsenseServer(domain, port, DBManager).bootstrap();
         });
       }
     }
   }
 
 
-  static main() {
+  static async main() {
     // AdsenseMachineApp.initLogger();
-    // AdsenseMachineApp.initDB();
+    await AdsenseMachineApp.initDB();
     AdsenseMachineApp.initClusterServers();
   }
 }
