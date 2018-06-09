@@ -1,4 +1,13 @@
 module.exports = class AdsenseRouter {
+
+  get randomEndpoint() {
+    const
+      { contentManager } = this,
+      i = contentManager.getRandomInt();
+    return `/${contentManager.site.articles[i].pathname}`;
+  }
+
+
   constructor(app, contentManager) {
     this.app = app;
     this.contentManager = contentManager;
@@ -50,7 +59,7 @@ module.exports = class AdsenseRouter {
           header: next.header
         };
       }
-      
+
       this.app.get(`/${article.pathname}`, (req, res) => {
         res.render(
           'post', {
@@ -66,10 +75,7 @@ module.exports = class AdsenseRouter {
 
   setRandomPlugin() {
     this.app.get('/random', (req, res) => {
-      res.render(
-        'post',
-        this.contentManager.randomPageResponseBody
-      );
+      res.redirect(this.randomEndpoint);
     });
   }
 

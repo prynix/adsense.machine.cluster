@@ -18,7 +18,7 @@ module.exports = class AdsenseContentManager {
   get randomPageResponseBody() {
     const
       { articles } = this.site,
-      i = this.getRandomInt(0, articles.length - 1),
+      i = this.getRandomInt(),
       prev = articles[i - 1],
       article = articles[i],
       next = articles[i + 1],
@@ -54,7 +54,9 @@ module.exports = class AdsenseContentManager {
     this.site = await collection.findOne({});
   }
 
-  getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+  getRandomInt() {
+    return Math.floor(
+      Math.random() * this.site.articles.length
+    );
   }
 }
