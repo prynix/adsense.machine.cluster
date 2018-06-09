@@ -1,0 +1,72 @@
+footer.main-footer
+  .container
+    .row
+      .col-md-4
+        .logo
+          h6.text-white #{title}
+        .contact-details
+          p Москва, Кутузовский проезд 6
+          p Тел: (020) 123 456 789
+          p
+            | Email: 
+            a(href="mailto:" + title + "@gmail.com") #{title}@gmail.com
+          ul.social-menu
+            li.list-inline-item
+              a(href="https://www.facebook.com/")
+                i.fa.fa-facebook
+            li.list-inline-item
+              a(href="https://twitter.com/")
+                i.fa.fa-twitter
+            li.list-inline-item
+              a(href="https://www.instagram.com/")
+                i.fa.fa-instagram
+            li.list-inline-item
+              a(href="https://www.behance.net/")
+                i.fa.fa-behance
+            li.list-inline-item
+              a(href="https://ru.pinterest.com/")
+                i.fa.fa-pinterest
+      .col-md-4
+        .menus.d-flex
+          ul.list-unstyled
+            li
+              a(href="#") Мой аккаунт
+            li
+              a(href="#") Добавить объявление
+            li
+              a(href="#") Цены
+            li
+              a(href="#") Конфиденциальность
+          ul.list-unstyled
+            li
+              a(href="#") Наши партнеры
+            li
+              a(href="#") Вопросы - Ответы
+            li
+              a(href="#") Как это работает
+            li
+              a(href="#") Контакты
+      .col-md-4
+        .latest-posts
+          a(href="#")
+            .post.d-flex.align-items-center
+              .image
+                img.img-fluid(src="img/small-thumbnail-1.jpg" alt="...")
+              .title
+                strong Отели для всех бюджетов
+                span.date.last-meta Июль 26, 2018
+          a(href="#")
+            .post.d-flex.align-items-center
+              .image
+                img.img-fluid(src="img/small-thumbnail-2.jpg" alt="...")
+              .title
+                strong Уличные аттракционы
+                span.date.last-meta Март 26, 2018
+          a(href="#")
+            .post.d-flex.align-items-center
+              .image
+                img.img-fluid(src="img/small-thumbnail-3.jpg" alt="...")
+              .title
+                strong Лучшие кафе
+                span.date.last-meta Август 26, 2018
+include scripts
