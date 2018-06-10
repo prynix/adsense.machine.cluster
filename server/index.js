@@ -15,16 +15,16 @@ module.exports = class AdsenseServer {
   }
 
 
+  prepareContentManager() {
+    const collection = this.db.collection(this.domain);
+    return new AdsenseContentManager(collection)
+  }
+
   setup() {
     this.app.set("view engine", "pug");
     this.app.set("views", join(__dirname, '../', "views"));
     this.app.use(express.static('assets'));
     return this;
-  }
-
-  prepareContentManager() {
-    const collection = this.db.collection(this.domain);
-    return new AdsenseContentManager(collection)
   }
 
   route() {

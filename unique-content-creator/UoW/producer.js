@@ -20,7 +20,10 @@ module.exports = class AdsenseContentProducer {
   }
 
   async scrapeArticles() {
-    const articlesHunter = new ArticlesHunter(this.contentSitesURLs);
+    const articlesHunter = new ArticlesHunter(
+      this.contentSitesURLs,
+      this.site.categories
+    );
     this.articles = await articlesHunter.scrape();
   }
 

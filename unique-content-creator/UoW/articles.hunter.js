@@ -2,7 +2,7 @@ const
   fetch = require('./fetch'),
   limits = {
     articles: 30,
-    paragraphs: 5,
+    paragraphs: 7,
     symbols: 3000
   };
 
@@ -23,7 +23,7 @@ module.exports = class ArticlesHunter {
   }
 
   static isValidParagraph(p) {
-    if (h1.length > 400 && h1.length < 1500) {
+    if (p.length > 350 && p.length < 1500) {
       return true;
     } else {
       return false;
@@ -38,9 +38,48 @@ module.exports = class ArticlesHunter {
     }
   }
 
+  static getRandomIndex(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
-  constructor(sitesURLs) {
+
+  get randomCategory() {
+    return this.categories[
+      ArticlesHunter.getRandomIndex(0, this.categories.length - 1)
+    ];
+  }
+
+  get randomHeader() {
+    const
+      { headers } = this,
+      index = ArticlesHunter.getRandomIndex(0, headers.length - 1),
+      randomHeader = headers[index];
+    headers.splice(index, 1);
+    return randomHeader;
+  }
+
+  get randomImage() {
+    const
+      { images } = this,
+      index = ArticlesHunter.getRandomIndex(0, images.length - 1),
+      randomImage = images[index];
+    images.splice(index, 1);
+    return randomImage;
+  }
+
+  get randomParagraph() {
+    const
+      { paragraphs } = this,
+      index = ArticlesHunter.getRandomIndex(0, paragraphs.length - 1),
+      randomParagraph = paragraphs[index];
+    paragraphs.splice(index, 1);
+    return randomParagraph;
+  }
+
+
+  constructor(sitesURLs, categories) {
     this.urls = sitesURLs;
+    this.categories = categories;
 
     this.headers = [];
     this.paragraphs = [];
@@ -90,18 +129,31 @@ module.exports = class ArticlesHunter {
   }
 
   buildArticlesFromContent() {
-    /*
-    categories
-    
-    pathname
-    img
-    header
-    paragraphs
-    */
+    for (let i = 0; i < limits.articles; i++) {
+      let
+        header = this.randomHeader,
+        categories = new Set(),
+        article = { paragraphs: [] };
+
+      categories.add(this.randomCategory);
+      categories.add(this.randomCategory);
+      article.categories = Array.from(categories);
+
+      article.pathname = header;
+      article.header = header;
+      article.img = this.randomImage;
+
+      for (let j = 0; j < limits.paragraphs; j++) {
+        article.paragraphs.push(this.randomParagraph);
+      }
+
+      this.articles.push(article);
+    }
   }
 
   async scrape() {
     await this.fetchContent();
+    this.buildArticlesFromContent();
     return this.articles;
   }
 }

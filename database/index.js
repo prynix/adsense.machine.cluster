@@ -1,4 +1,4 @@
-const { MongoClient } = require('mongodb')
+const { MongoClient } = require('mongodb');
 /*
 *   @see
 *   http://mongodb.github.io/node-mongodb-native/3.0/
