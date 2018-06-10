@@ -118,7 +118,7 @@ module.exports = class ArticlesHunter {
 
         $('img').each((i, img) => {
           const src = $(img).attr('src');
-          if (ArticlesHunter.isValidImageSRC(paragraph)) {
+          if (ArticlesHunter.isValidImageSRC(src)) {
             this.images.push(src);
           }
         });

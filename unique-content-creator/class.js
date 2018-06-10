@@ -32,7 +32,7 @@ module.exports = class AdsenseUniqueContentCreator {
     this
       .needingContentSites
       .forEach(site =>
-        new AdsenseContentProducer(site).work()
+        new AdsenseContentProducer(site, this.db).work()
       );
   }
 
