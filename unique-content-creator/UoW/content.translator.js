@@ -16,18 +16,31 @@ module.exports = class ContentTranslator {
       { articles } = this,
       { length } = articles;
     for (let i = 0; i < length; i++) {
-      const article = articles[i];
+      let notification = `\ttranslation № ${i + 1} complete`;
+      console.time(notification);
+      const
+        article = articles[i],
+        { paragraphs } = article,
+        len = paragraphs.length;
+
       try {
         let header = await translate(article.header, config);
-        console.info(`\n\ngoogleTranslate\n`, header.text);
+        article.header = header.text;
+
+        for (let j = 0; j < len; j++) {
+          let paragraph = await translate(paragraphs[j], config);
+          paragraphs[j] = paragraph.text;
+        }
+
+        this.translatedArticles.push(article);
       } catch (e) {
         console.error(e);
       }
+      console.timeEnd(notification);
     }
   }
 
   async translate() {
-    console.log(`ContentTranslator`);
     await this.googleTranslate();
     return this.translatedArticles;
   }

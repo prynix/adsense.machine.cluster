@@ -36,21 +36,24 @@ module.exports = class AdsenseContentProducer {
   }
 
   async saveArticles() {
-    const collection = await this.db.collection(this.site.title);
-    console.info(collection);
-    console.info(this.articles);
-    // collection.insert(this.articles);
+    let notification = `\nsave content for ${this.site.domain} `;
+    console.time(notification);
+    const
+      { site, articles } = this,
+      collection = await this.db.collection(site.title);
+    collection.insert({ ...site, articles });
+    console.timeEnd(notification);
   }
 
 
-  async  work() {
+  async work() {
     console.log(`\n|> scrape sites`);
     await this.scrapeWebSites();
     console.log(`\n|> scrape articles`);
     await this.scrapeArticles();
     console.log(`\n|> translate articles`);
     await this.translateArticles();
-    console.log(`\n|> save article`);
+    console.log(`\n|> save articles`);
     await this.saveArticles();
   }
 }

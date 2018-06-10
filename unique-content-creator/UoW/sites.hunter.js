@@ -28,6 +28,8 @@ module.exports = class SitesHunter {
       { searchEngineURLs } = this,
       { length } = searchEngineURLs;
     for (let i = 0; i < length; i++) {
+      let notification = `\tsite № ${i + 1} complete`;
+      console.time(notification);
       try {
         const $ = await fetch(searchEngineURLs[i]);
         $('ol#b_results li.b_algo a').each((i, link) =>
@@ -36,6 +38,7 @@ module.exports = class SitesHunter {
       } catch (e) {
         console.error(e);
       }
+      console.timeEnd(notification);
     }
   }
 

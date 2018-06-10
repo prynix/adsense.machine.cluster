@@ -14,6 +14,10 @@ module.exports = class ArticlesHunter {
     return untrustedText.replace(/<[^>]+>/ig, '');
   }
 
+  static beautifyPathname(uglyPathname) {
+    return uglyPathname.replace(/ /ig, '-');
+  }
+
   static isValidHeader(h1) {
     if (h1.length > 10 && h1.length < 50 && h1.split(' ').length >= 2) {
       return true;
@@ -94,6 +98,8 @@ module.exports = class ArticlesHunter {
       { urls } = this,
       { length } = urls;
     for (let i = 0; i < length; i++) {
+      let notification = `\tarticle № ${i + 1} complete`;
+      console.time(notification);
       try {
         // todo пройтись по сайту?
         const $ = await fetch(urls[i]);
@@ -125,6 +131,7 @@ module.exports = class ArticlesHunter {
       } catch (e) {
         console.error(e);
       }
+      console.timeEnd(notification);
     }
   }
 
@@ -139,7 +146,7 @@ module.exports = class ArticlesHunter {
       categories.add(this.randomCategory);
       article.categories = Array.from(categories);
 
-      article.pathname = header;
+      article.pathname = ArticlesHunter.beautifyPathname(header);
       article.header = header;
       article.img = this.randomImage;
 
