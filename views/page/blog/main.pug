@@ -1,7 +1,8 @@
+- var posts = articles.slice(9)
 main.posts-listing.col-lg-8
   .container
     .row
-      each article, index in articles
+      each article, index in posts
         .post.col-xl-6
           .post-thumbnail
             a(href="" + article.pathname)

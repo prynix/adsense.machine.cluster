@@ -1,8 +1,9 @@
+- var posts = articles.slice(4)
 .widget.latest-posts
   header
     h3.h6 Свежие статьи
   .blog-posts
-    each article in articles
+    each article in posts
       a(href=""+article.pathname)
         .item.d-flex.align-items-center
           .image

@@ -6,10 +6,10 @@
     "description": "Барбер клуб для джентельменов",
     "info": "Лучшие парикмахерские блоги из тысяч лучших журналов Barber в нашем индексе, используя поисковые и социальные показатели. Данные будут обновляться один раз в неделю.",
     "categories": [
-      "барберы",
-      "барбершоп",
-      "усы",
-      "бороды"
+      "barbers",
+      "barbershop",
+      "mustache",
+      "beard"
     ],
     "advBlocks": [
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fbsobkpdg --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"2826389459\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",

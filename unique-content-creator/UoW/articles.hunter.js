@@ -2,7 +2,7 @@ const
   fetch = require('./fetch'),
   limits = {
     articles: 30,
-    paragraphs: 7,
+    paragraphs: 10,
     symbols: 3000
   };
 
@@ -15,7 +15,9 @@ module.exports = class ArticlesHunter {
   }
 
   static beautifyPathname(uglyPathname) {
-    return uglyPathname.replace(/ /ig, '-');
+    return uglyPathname
+      .replace(/\s/ig, '-')
+      .replace(/(\(|\))/ig, '');
   }
 
   static isValidHeader(h1) {
@@ -97,11 +99,11 @@ module.exports = class ArticlesHunter {
     const
       { urls } = this,
       { length } = urls;
+    // todo
     for (let i = 0; i < length; i++) {
       let notification = `\tarticle № ${i + 1} complete`;
       console.time(notification);
       try {
-        // todo пройтись по сайту?
         const $ = await fetch(urls[i]);
 
         $('h1').each((i, h1) => {
