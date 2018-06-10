@@ -1,4 +1,4 @@
-![](https://www.ybierling.com/v2/wp-content/uploads/2018/05/logogoogleadsense-1.png)
+![](https://marketingland.com/wp-content/ml-loads/2016/08/google-adsense-icon3-1920.jpg)
 
 ```sh
 $ curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
@@ -11,7 +11,7 @@ $ sudo apt-get install -y mongodb-org
 
 
 ```sh
-$ git clone git@github.com:cr7parker/adsense.machine.cluster.git
+$ git clone https://github.com/cr7parker/adsense.machine.cluster.git
 ```
 
 

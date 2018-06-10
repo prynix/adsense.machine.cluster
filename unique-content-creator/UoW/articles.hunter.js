@@ -1,8 +1,8 @@
 const
   fetch = require('./fetch'),
   limits = {
-    articles: 50,
-    paragraphs: 10,
+    articles: 40,
+    paragraphs: 8,
     symbols: 3000
   };
 
@@ -16,12 +16,18 @@ module.exports = class ArticlesHunter {
 
   static beautifyPathname(uglyPathname) {
     return uglyPathname
-      .replace(/\s/ig, '-')
-      .replace(/(\(|\))/ig, '');
+      .replace(/\s+/ig, '-')
+      .replace(/(\(|\)|’|,|.|\[|\]|&)/ig, '')
+      .toLowerCase();
   }
 
   static isValidHeader(h1) {
-    if (h1.length > 10 && h1.length < 50 && h1.split(' ').length >= 2) {
+    if (
+      h1.length >= 10 &&
+      h1.length <= 50 &&
+      !(h1.includes('200') || h1.includes('400')) &&
+      h1.split(' ').length >= 2
+    ) {
       return true;
     } else {
       return false;
@@ -108,6 +114,15 @@ module.exports = class ArticlesHunter {
 
         $('h1').each((i, h1) => {
           const header = $(h1).text();
+          if (ArticlesHunter.isValidHeader(header)) {
+            this.headers.push(
+              ArticlesHunter.sanitize(header)
+            )
+          }
+        });
+
+        $('h2').each((i, h2) => {
+          const header = $(h2).text();
           if (ArticlesHunter.isValidHeader(header)) {
             this.headers.push(
               ArticlesHunter.sanitize(header)

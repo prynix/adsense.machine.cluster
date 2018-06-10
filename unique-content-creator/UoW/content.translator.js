@@ -22,12 +22,13 @@ module.exports = class ContentTranslator {
         article = articles[i],
         { paragraphs } = article,
         len = paragraphs.length;
-
+      if (!article.header) continue;
       try {
         let header = await translate(article.header, config);
         article.header = header.text;
 
         for (let j = 0; j < len; j++) {
+          if (!paragraphs[j]) continue;
           let paragraph = await translate(paragraphs[j], config);
           paragraphs[j] = paragraph.text;
         }
