@@ -39,7 +39,7 @@ module.exports = class SitesHunter {
     }
   }
 
-  async work() {
+  async scrape() {
     this.buildSearchEngineURLs();
     await this.fetchContentSitesURLs();
     return Array.from(this.contentSitesURLs);

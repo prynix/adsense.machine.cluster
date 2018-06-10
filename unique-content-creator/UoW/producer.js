@@ -14,19 +14,19 @@ module.exports = class AdsenseContentProducer {
   }
 
 
-  async huntWebSitesForScrape() {
+  async scrapeWebSites() {
     const sitesHunter = new SitesHunter(this.site.categories);
-    this.contentSitesURLs = await sitesHunter.work();
+    this.contentSitesURLs = await sitesHunter.scrape();
   }
 
-  async huntArticles() {
+  async scrapeArticles() {
     const articlesHunter = new ArticlesHunter(this.contentSitesURLs);
-    this.articles = await articlesHunter.work();
+    this.articles = await articlesHunter.scrape();
   }
 
   async  work() {
-    await this.huntWebSitesForScrape();
-    await this.huntArticles();
+    await this.scrapeWebSites();
+    await this.scrapeArticles();
     // await this.translateContent();
   }
 }
