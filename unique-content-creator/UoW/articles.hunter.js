@@ -1,7 +1,7 @@
 const
   fetch = require('./fetch'),
   limits = {
-    articles: 30,
+    articles: 50,
     paragraphs: 10,
     symbols: 3000
   };

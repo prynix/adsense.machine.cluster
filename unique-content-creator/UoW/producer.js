@@ -46,7 +46,7 @@ module.exports = class AdsenseContentProducer {
   }
 
 
-  async work() {
+  async produce() {
     console.info(`\nBuild content for  ${this.site.domain}\n\n`);
     await this.scrapeWebSites();
     await this.scrapeArticles();

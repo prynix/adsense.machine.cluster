@@ -28,10 +28,10 @@ module.exports = class AdsenseUniqueContentCreator {
     }
   }
 
-  fill() {
+  produce() {
     this.needingContentSites.forEach(site =>
       process.nextTick(() =>
-        new AdsenseContentProducer(site, this.db).work()
+        new AdsenseContentProducer(site, this.db).produce()
       )
     );
   }
@@ -53,6 +53,6 @@ module.exports = class AdsenseUniqueContentCreator {
       db = await mongo.init(config.mongodb),
       contentCreator = new AdsenseUniqueContentCreator(sites, db);
     await contentCreator.checkContentExistence();
-    contentCreator.fill();
+    contentCreator.produce();
   }
 }
