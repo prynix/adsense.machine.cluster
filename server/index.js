@@ -23,9 +23,8 @@ module.exports = class AdsenseServer {
   }
 
   prepareContentManager() {
-    return new AdsenseContentManager(
-      this.db.collection(this.domain)
-    )
+    const collection = this.db.collection(this.domain);
+    return new AdsenseContentManager(collection)
   }
 
   route() {

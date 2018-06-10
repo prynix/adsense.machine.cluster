@@ -16,5 +16,26 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fbwrpylpurylmfbvxcbxzd --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"7587761540\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- 56gs1gn6s51b65 --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"2650419190\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
     ]
+  },
+  {
+    "port": 3001,
+    "domain": "http://backend-node-js.ru/",
+    "title": "backend-node-js",
+    "description": "Русскоязычное сообщество node.js разработчиков",
+    "info": "Программная платформа, основанная на движке V8 (транслирующем JavaScript в машинный код), превращающая JavaScript из узкоспециализированного языка в язык общего назначения. Node.js добавляет возможность JavaScript взаимодействовать с устройствами ввода-вывода через свой API (написанный на C++), подключать другие внешние библиотеки, написанные на разных языках, обеспечивая вызовы к ним из JavaScript-кода. Node.js применяется преимущественно на сервере, выполняя роль веб-сервера, но есть возможность разрабатывать на Node.js и десктопные оконные приложения и даже программировать микроконтроллеры. В основе Node.js лежит событийно-ориентированное и асинхронное программирование с неблокирующим вводом/выводом.",
+    "categories": [
+      "javascript",
+      "V8 JavaScript Engine",
+      "node js",
+      "angular 6",
+      "react js",
+      "domain driven design",
+      "software engineering"
+    ],
+    "advBlocks": [
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- ewrstdyuhjkmnbv --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"9387875447\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- sghfjhgmjcbv --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"2938302577\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fghdjukykytr --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"5181322535\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
+    ]
   }
 ]

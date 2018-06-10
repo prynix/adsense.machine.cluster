@@ -1,9 +1,9 @@
 {
   "name": "adsense.machine",
-  "version": "0.5.1",
+  "version": "1.1.1",
   "private": true,
   "description": "adsense.cluster",
-  "main": "main.js",
+  "main": "index.js",
   "dependencies": {
     "pug": "2.0.3",
     "express": "4.16.3",
@@ -13,7 +13,8 @@
     "log4js": "2.8.0"
   },
   "scripts": {
-    "start": "node index"
+    "start": "node index",
+    "scrape": "node unique-content-creator/index"
   },
   "author": "anonymous",
   "license": "MIT"
