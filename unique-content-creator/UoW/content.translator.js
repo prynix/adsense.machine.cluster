@@ -22,7 +22,9 @@ module.exports = class ContentTranslator {
         article = articles[i],
         { paragraphs } = article,
         len = paragraphs.length;
+
       if (!article.header) continue;
+
       try {
         let header = await translate(article.header, config);
         article.header = header.text;

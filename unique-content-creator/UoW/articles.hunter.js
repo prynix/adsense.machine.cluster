@@ -1,54 +1,12 @@
 const
+  ContentValidator = require('./content.validator'),
   fetch = require('./fetch'),
-  limits = {
-    articles: 40,
-    paragraphs: 7,
-    symbols: 3000
-  };
+  { config } = require('../../config'),
+  { limits } = config;
 
 
 
 module.exports = class ArticlesHunter {
-
-  static sanitize(untrustedText) {
-    return untrustedText.replace(/<[^>]+>/ig, '');
-  }
-
-  static beautifyPathname(uglyPathname) {
-    return uglyPathname
-      .replace(/\s+/ig, '-')
-      .replace(/(\(|\)|’|,|.|\[|\]|&)/ig, '')
-      .toLowerCase();
-  }
-
-  static isValidHeader(h1) {
-    if (
-      h1.length >= 10 &&
-      h1.length <= 50 &&
-      !(h1.includes('200') || h1.includes('400')) &&
-      h1.split(' ').length >= 2
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  static isValidParagraph(p) {
-    if (p.length > 350 && p.length < 1500) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  static isValidImageSRC(src) {
-    if (/http|https/.exec(src)) {
-      return true;
-    } else {
-      return false;
-    }
-  }
 
   static getRandomIndex(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -114,34 +72,34 @@ module.exports = class ArticlesHunter {
 
         $('h1').each((i, h1) => {
           const header = $(h1).text();
-          if (ArticlesHunter.isValidHeader(header)) {
+          if (ContentValidator.isValidHeader(header)) {
             this.headers.push(
-              ArticlesHunter.sanitize(header)
+              ContentValidator.sanitize(header)
             )
           }
         });
 
         $('h2').each((i, h2) => {
           const header = $(h2).text();
-          if (ArticlesHunter.isValidHeader(header)) {
+          if (ContentValidator.isValidHeader(header)) {
             this.headers.push(
-              ArticlesHunter.sanitize(header)
+              ContentValidator.sanitize(header)
             )
           }
         });
 
         $('p').each((i, p) => {
           const paragraph = $(p).text();
-          if (ArticlesHunter.isValidParagraph(paragraph)) {
+          if (ContentValidator.isValidParagraph(paragraph)) {
             this.paragraphs.push(
-              ArticlesHunter.sanitize(paragraph)
+              ContentValidator.sanitize(paragraph)
             )
           }
         });
 
         $('img').each((i, img) => {
           const src = $(img).attr('src');
-          if (ArticlesHunter.isValidImageSRC(src)) {
+          if (ContentValidator.isValidImageSRC(src)) {
             this.images.push(src);
           }
         });
@@ -163,12 +121,14 @@ module.exports = class ArticlesHunter {
       categories.add(this.randomCategory);
       article.categories = Array.from(categories);
 
-      article.pathname = ArticlesHunter.beautifyPathname(header);
+      article.pathname = ContentValidator.beautifyPathname(header);
       article.header = header;
       article.img = this.randomImage;
 
       for (let j = 0; j < limits.paragraphs; j++) {
-        article.paragraphs.push(this.randomParagraph);
+        article.paragraphs.push(
+          ContentValidator.beautifyParagraph(this.randomParagraph)
+        );
       }
 
       this.articles.push(article);

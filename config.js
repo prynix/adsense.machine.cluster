@@ -11,5 +11,9 @@ exports.config = {
       { type: 'file', filename: 'logs/server.log', 'maxLogSize': 102400, 'backups': 10 }
     ],
     replaceConsole: true
+  },
+  limits: {
+    articles: 40,
+    paragraphs: 10
   }
 };
