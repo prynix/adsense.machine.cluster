@@ -2,12 +2,12 @@ module.exports = class AdsenseContentManager {
 
   get indexPageResponseBody() {
     const { title, description, info, advBlocks, articles } = this.site;
-    return { title, description, info, advBlocks, articles };
+    return { title, description, info, advBlocks, articles: articles.slice(9) };
   }
 
   get blogPageResponseBody() {
     const { title, articles, advBlocks, categories } = this.site;
-    return { title, articles, advBlocks, categories };
+    return { title, articles: articles.slice(9), advBlocks, categories };
   }
 
   get postPageResponseBody() {
