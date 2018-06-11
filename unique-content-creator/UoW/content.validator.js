@@ -11,7 +11,7 @@ module.exports = class ContentValidator {
   static beautifyPathname(uglyPathname) {
     return uglyPathname
       .replace(/\s+/ig, '-')
-      .replace(/['?\[\]\|&;\$%@"<>\(\)\+,]/g, '')
+      .replace(/['”:?!\[\]\|&;\$%@"<>\(\)\+,]/g, '')
       .toLowerCase();
   }
 
