@@ -43,7 +43,7 @@ module.exports = class ArticlesHunter {
       index = ArticlesHunter.getRandomIndex(0, paragraphs.length - 1),
       randomParagraph = paragraphs[index];
     paragraphs.splice(index, 1);
-    return randomParagraph;
+    return randomParagraph || '';
   }
 
 
