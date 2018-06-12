@@ -1,6 +1,7 @@
 const
   { join } = require('path'),
   express = require('express'),
+  methodOverride = require('method-override'),
   AdsenseRouter = require('./router'),
   AdsenseContentManager = require('./content-manager');
 
@@ -24,6 +25,7 @@ module.exports = class AdsenseServer {
     this.app.set("view engine", "pug");
     this.app.set("views", join(__dirname, '../', "views"));
     this.app.use(express.static('assets'));
+    this.app.use(methodOverride());
     return this;
   }
 
@@ -32,6 +34,14 @@ module.exports = class AdsenseServer {
       contentManager = this.prepareContentManager(),
       router = new AdsenseRouter(this.app, contentManager);
     router.init();
+    return this;
+  }
+
+  handleErrors() {
+    this.app.use(function (err, req, res, next) {
+      console.error(err.message);
+      res.redirect('/blog');
+    });
     return this;
   }
 
@@ -47,6 +57,7 @@ module.exports = class AdsenseServer {
     this
       .setup()
       .route()
+      .handleErrors()
       .listen();
   }
 }

@@ -15,22 +15,25 @@ module.exports = class AdsenseRouter {
 
 
   setRequestControllers() {
-    this.app.get('/', (req, res) => {
-      res.render(
-        'index',
-        this.contentManager.indexPageResponseBody
-      );
-    });
-    this.app.get('/blog', (req, res) => {
+    this.app.get('/blog', (err, req, res, next) => {
+      if (err) return next(err);
       res.render(
         'blog',
         this.contentManager.blogPageResponseBody
       );
     });
-    this.app.get('/post', (req, res) => {
+    this.app.get('/post', (err, req, res, next) => {
+      if (err) return next(err);
       res.render(
         'post',
         this.contentManager.postPageResponseBody
+      );
+    });
+    this.app.get('/', (err, req, res, next) => {
+      if (err) return next(err);
+      res.render(
+        'index',
+        this.contentManager.indexPageResponseBody
       );
     });
     return this;
@@ -58,7 +61,8 @@ module.exports = class AdsenseRouter {
           header: next.header
         };
       }
-      this.app.get(`/${article.pathname}`, (req, res) => {
+      this.app.get(`/${article.pathname}`, (err, req, res, next) => {
+        if (err) return next(err);
         res.render(
           'post', {
             ...this.contentManager.postPageResponseBody,
@@ -72,7 +76,8 @@ module.exports = class AdsenseRouter {
   }
 
   setRandomPlugin() {
-    this.app.get('/random', (req, res) => {
+    this.app.get('/random', (err, req, res, next) => {
+      if (err) return next(err);
       res.redirect(this.randomEndpoint);
     });
   }
@@ -84,6 +89,6 @@ module.exports = class AdsenseRouter {
         .setRequestControllers()
         .setLoopRequestControllersByEveryArticle()
         .setRandomPlugin();
-    }, 1500);
+    }, 1000);
   }
 }
