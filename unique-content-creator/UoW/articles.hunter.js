@@ -1,5 +1,6 @@
 const
   ContentValidator = require('./content.validator'),
+  ImageValidator = require('./image.validator'),
   fetch = require('./fetch'),
   { config } = require('../../config'),
   { limits } = config;
@@ -98,10 +99,11 @@ module.exports = class ArticlesHunter {
         });
 
         $('img').each((i, img) => {
-          const src = $(img).attr('src');
-          if (ContentValidator.isValidImageSRC(src)) {
-            this.images.push(src);
-          }
+          const
+            src = $(img).attr('src'),
+            imageValidator = new ImageValidator(src),
+            isValidImage = await imageValidator.isValidImage();
+          if (isValidImage) this.images.push(src);
         });
       } catch (e) {
         console.error(e);

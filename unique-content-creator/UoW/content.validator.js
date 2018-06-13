@@ -1,3 +1,8 @@
+const { detect } = new (require('languagedetect'));
+/*
+*   @see
+*   https://github.com/FGRibreau/node-language-detect
+*/
 module.exports = class ContentValidator {
 
   static sanitize(untrustedText) {
@@ -19,47 +24,26 @@ module.exports = class ContentValidator {
     return !/( fuck | porn | sex | anal | gay | cock | ass | boobs)/.test(char);
   }
 
-  static isValidLanguage(char) {
-    return !/[\а-яА-Я]+/.test(char) && !/[ÀàÂâÆæÇçÈèÉéÊêËëÎîÏïÔôŒœÙùÛûÜüäöüÄÖÜßéÉèÈêÊ]/.test(char);
+  static isValidLanguage(text) {
+    const langs = detect(text);
+    console.log(langs);
+    // todo
+    return !/[\а-яА-Я]+/.test(text) && !/[ÀàÂâÆæÇçÈèÉéÊêËëÎîÏïÔôŒœÙùÛûÜüäöüÄÖÜßéÉèÈêÊ]/.test(text);
   }
 
   static isValidHeader(h1) {
-    // todo phone numbers
-    if (
-      h1.length >= 12 &&
+    // todo phone numbers   
+    return h1.length >= 12 &&
       h1.length <= 60 &&
       !(h1.includes('200') || h1.includes('40')) &&
       h1.split(' ').length >= 2 &&
       ContentValidator.isValidLanguage(h1) &&
-      ContentValidator.isNotPorn(h1)
-    ) {
-      return true;
-    } else {
-      return false;
-    }
+      ContentValidator.isNotPorn(h1);
   }
 
   static isValidParagraph(p) {
-    if (
-      p.length > 350 && p.length < 1500 &&
+    return p.length > 350 && p.length < 1500 &&
       ContentValidator.isValidLanguage(p) &&
-      ContentValidator.isNotPorn(p)
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  static isValidImageSRC(src) {
-    if (
-      /http|https/.test(src) &&
-      ContentValidator.isValidLanguage(src) &&
-      ContentValidator.isNotPorn(src)
-    ) {
-      return true;
-    } else {
-      return false;
-    }
+      ContentValidator.isNotPorn(p);
   }
 }
