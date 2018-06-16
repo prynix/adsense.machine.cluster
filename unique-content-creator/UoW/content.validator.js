@@ -42,7 +42,7 @@ module.exports = class ContentValidator {
   }
 
   static isValidParagraph(p) {
-    return p.length > 450 && p.length < 3000 &&
+    return p.length > 350 && p.length < 3000 &&
       ContentValidator.isValidLanguage(p) &&
       ContentValidator.isNotPorn(p);
   }
