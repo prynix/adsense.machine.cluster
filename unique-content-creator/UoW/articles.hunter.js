@@ -1,4 +1,5 @@
 const
+  ImageValidator = require('./image.validator'),
   ContentValidator = require('./content.validator'),
   fetch = require('./fetch'),
   { config } = require('../../config'),
@@ -67,9 +68,7 @@ module.exports = class ArticlesHunter {
       let notification = `\tarticle № ${i + 1} complete`;
       console.time(notification);
       try {
-        const
-          $ = await fetch(urls[i]),
-          src = 'https://picsum.photos/700/500/?random';
+        const $ = await fetch(urls[i]);
 
         $('h1').each((i, h1) => {
           const header = $(h1).text();
@@ -98,14 +97,13 @@ module.exports = class ArticlesHunter {
           }
         });
 
-        // $('img').each(async (i, img) => {
-        //   const
-        //     src = $(img).attr('src'),
-        //     imageValidator = new ImageValidator(src),
-        //     isValidImage = await imageValidator.isValidImage();
-        //   if (isValidImage) this.images.push(src);
-        // });
-        this.images.push(src);
+        $('img').each(async (i, img) => {
+          const
+            src = $(img).attr('src'),
+            imageValidator = new ImageValidator(src),
+            isValidImage = await imageValidator.isValidImage();
+          if (isValidImage) this.images.push(src);
+        });
       } catch (e) {
         console.error(e);
         continue;

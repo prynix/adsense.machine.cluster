@@ -2,7 +2,7 @@ const
   { promisify } = require('util'),
   { parse } = require('url'),
   http = require('http'),
-  sizeOf = promisify(require('image-size')),
+  sizeOf = require('image-size'),
   ContentValidator = require('./content.validator');
 /*
 *   @see
@@ -28,8 +28,9 @@ module.exports = class ImageValidator {
   async isValidImageSize() {
     try {
       const { width, height } = await this.computeImageSizes(this.src);
-      return width >= 500 && height >= 300;
+      return width >= 600 && height >= 400;
     } catch (e) {
+      console.error(e);
       return false;
     }
   }
@@ -46,22 +47,12 @@ module.exports = class ImageValidator {
           .on('data', function (chunk) {
             chunks.push(chunk);
           })
-          .on('end', async function () {
-            try {
-              const sizes = await sizeOf(Buffer.concat(chunks));
-              console.log('sizes', sizes);
-              return resolve(sizes);
-            } catch (e) {
-              console.error(e);
-              return reject(e);
-            }
+          .on('end', function () {
+            return resolve(
+              sizeOf(Buffer.concat(chunks))
+            );
           });
-      })
-      .on('error', function (e) {
-        console.error(e);
-        return reject(e);
-      })
-    );
+      }));
   }
 
   isValidImageSRC() {
