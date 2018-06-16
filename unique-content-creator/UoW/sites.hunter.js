@@ -14,7 +14,7 @@ module.exports = class SitesHunter {
     const { keywords, searchEngineURLs } = this;
     keywords.forEach(
       category =>
-        [1, 2, 3, 4, 5].forEach(
+        [1/*, 2, 3, 4, 5*/].forEach(
           i =>
             searchEngineURLs.push(
               `https://www.bing.com/search?q=${category}&first=${i}1`

@@ -2,7 +2,7 @@ exports.config = {
   mongodb: {
     uri: 'mongodb://127.0.0.1:27017/adsense',
     options: {
-      poolSize: 10
+      poolSize: 5
     }
   },
   log4js: {
@@ -13,7 +13,7 @@ exports.config = {
     replaceConsole: true
   },
   limits: {
-    articles: 35,
+    articles: 5,
     paragraphs: 9
   }
 };

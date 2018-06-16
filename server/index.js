@@ -47,6 +47,6 @@ module.exports = class AdsenseServer {
   async bootstrap() {
     this.setup();
     await this.route();
-    this.listen();
+    this.listen();   
   }
 }

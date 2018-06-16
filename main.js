@@ -7,10 +7,10 @@ let
   sites = require('./sites.json'),
   { length } = sites,
   { config } = require('./config'),
-  DB;
-/*
-*   todo error handling & notify
-*/
+  mongo, DB;
+
+
+
 module.exports = class AdsenseMachineApp {
 
   static initLogger() {
@@ -19,7 +19,7 @@ module.exports = class AdsenseMachineApp {
   }
 
   static async initDB() {
-    let mongo = new MongoDBManager();
+    mongo = new MongoDBManager();
     DB = await mongo.init(config.mongodb);
   }
 
@@ -32,6 +32,7 @@ module.exports = class AdsenseMachineApp {
       cluster.on('exit', (worker, code, signal) => {
         console.log(`worker ${worker.process.pid} died`);
       });
+      setTimeout(async () => await mongo.disconnect(), 30 * 1000);
 
     } else {
 
