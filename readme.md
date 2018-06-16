@@ -19,6 +19,6 @@ $ git clone https://github.com/cr7parker/adsense.machine.cluster.git
 ```sh
 $ service mongod start
 $ npm i
-$ npm run scrape
+$ npm run produce-content
 $ pm2 start index.js
 ```

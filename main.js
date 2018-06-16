@@ -25,19 +25,24 @@ module.exports = class AdsenseMachineApp {
 
   static initClusterServers() {
     if (cluster.isMaster) {
+
       for (let i = 0; i < numCPUs; i++) {
         cluster.fork();
       }
       cluster.on('exit', (worker, code, signal) => {
         console.log(`worker ${worker.process.pid} died`);
       });
+
     } else {
+
       for (let i = 0; i < length; i++) {
         const { title, port } = sites[i];
-        process.nextTick(function () {
-          new AdsenseServer(title, port, DB).bootstrap();
+        process.nextTick(async function () {
+          let adsenseServer = new AdsenseServer(title, port, DB);
+          await adsenseServer.bootstrap();
         });
       }
+
     }
   }
 

@@ -98,7 +98,7 @@ module.exports = class ArticlesHunter {
           }
         });
 
-        $('img').each((i, img) => {
+        $('img').each(async (i, img) => {
           const
             src = $(img).attr('src'),
             imageValidator = new ImageValidator(src),

@@ -11,31 +11,30 @@ module.exports = class AdsenseRouter {
   constructor(app, contentManager) {
     this.app = app;
     this.contentManager = contentManager;
+    this.router = require('express').Router();
   }
 
 
   setRequestControllers() {
-    this.app.get('/blog', (err, req, res, next) => {
-      if (err) return next(err);
-      res.render(
-        'blog',
-        this.contentManager.blogPageResponseBody
-      );
-    });
-    this.app.get('/post', (err, req, res, next) => {
-      if (err) return next(err);
-      res.render(
-        'post',
-        this.contentManager.postPageResponseBody
-      );
-    });
-    this.app.get('/', (err, req, res, next) => {
-      if (err) return next(err);
+    this.router.get('/', (req, res) => {
       res.render(
         'index',
         this.contentManager.indexPageResponseBody
       );
     });
+    this.router.get('/blog', (req, res) => {
+      res.render(
+        'blog',
+        this.contentManager.blogPageResponseBody
+      );
+    });
+    this.router.get('/post', (req, res) => {
+      res.render(
+        'post',
+        this.contentManager.postPageResponseBody
+      );
+    });
+
     return this;
   }
 
@@ -61,8 +60,7 @@ module.exports = class AdsenseRouter {
           header: next.header
         };
       }
-      this.app.get(`/${article.pathname}`, (err, req, res, next) => {
-        if (err) return next(err);
+      this.router.get(`/${article.pathname}`, (req, res) => {
         res.render(
           'post', {
             ...this.contentManager.postPageResponseBody,
@@ -76,19 +74,29 @@ module.exports = class AdsenseRouter {
   }
 
   setRandomPlugin() {
-    this.app.get('/random', (err, req, res, next) => {
-      if (err) return next(err);
+    this.router.get('/random', (req, res) => {
       res.redirect(this.randomEndpoint);
+    });
+    return this;
+  }
+
+  handleErrors() {
+    this.app.use('/', this.router);
+
+    this.app.use((req, res) => {
+      res.render(
+        'blog',
+        this.contentManager.blogPageResponseBody
+      );
     });
   }
 
 
   init() {
-    setTimeout(() => {
-      this
-        .setRequestControllers()
-        .setLoopRequestControllersByEveryArticle()
-        .setRandomPlugin();
-    }, 1000);
+    this
+      .setRequestControllers()
+      .setLoopRequestControllersByEveryArticle()
+      .setRandomPlugin()
+      .handleErrors();
   }
 }

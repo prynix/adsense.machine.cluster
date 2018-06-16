@@ -23,12 +23,12 @@ module.exports = class AdsenseContentManager {
 
 
   constructor(collection) {
-    this.pullOutDataFromCollection(collection);
+    this.collection = collection;
   }
 
 
-  async pullOutDataFromCollection(collection) {
-    this.site = await collection.findOne({});
+  async pullOutDataFromCollection() {
+    this.site = await this.collection.findOne({});
   }
 
   getRandomArticleIndex() {
