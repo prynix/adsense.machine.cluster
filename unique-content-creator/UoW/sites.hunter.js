@@ -12,15 +12,13 @@ module.exports = class SitesHunter {
 
   buildSearchEngineURLs() {
     const { keywords, searchEngineURLs } = this;
-    keywords.forEach(
-      category =>
-        [1/*, 2, 3, 4, 5*/].forEach(
-          i =>
-            searchEngineURLs.push(
-              `https://www.bing.com/search?q=${category}&first=${i}1`
-            )
+    keywords.forEach(category => {
+      for (let i = 0; i < 10; i++) {
+        searchEngineURLs.push(
+          `https://www.bing.com/search?q=${category}&first=${i}1`
         )
-    );
+      }
+    });
   }
 
   async fetchContentSitesURLs() {

@@ -1,4 +1,4 @@
-const { detect } = new (require('languagedetect'));
+const LanguageDetector = new (require('languagedetect'));
 /*
 *   @see
 *   https://github.com/FGRibreau/node-language-detect
@@ -16,7 +16,7 @@ module.exports = class ContentValidator {
   static beautifyPathname(uglyPathname) {
     return uglyPathname
       .replace(/\s+/ig, '-')
-      .replace(/['”:?!\[\]\|&;\$%®@"<>\(\)\+,]/g, '')
+      .replace(/[.#«»'”:?!\[\]\|&;\$%®@"<>\(\)\+,]/g, '')
       .toLowerCase();
   }
 
@@ -25,15 +25,15 @@ module.exports = class ContentValidator {
   }
 
   static isValidLanguage(text) {
-    const langs = detect(text);
-    console.log(langs);
+    // const langs = LanguageDetector.detect(text);
+    // console.log(langs);
     // todo
     return !/[\а-яА-Я]+/.test(text) && !/[ÀàÂâÆæÇçÈèÉéÊêËëÎîÏïÔôŒœÙùÛûÜüäöüÄÖÜßéÉèÈêÊ]/.test(text);
   }
 
   static isValidHeader(h1) {
     // todo phone numbers   
-    return h1.length >= 12 &&
+    return h1.length >= 15 &&
       h1.length <= 60 &&
       !(h1.includes('200') || h1.includes('40')) &&
       h1.split(' ').length >= 2 &&
@@ -42,7 +42,7 @@ module.exports = class ContentValidator {
   }
 
   static isValidParagraph(p) {
-    return p.length > 350 && p.length < 1500 &&
+    return p.length > 450 && p.length < 3000 &&
       ContentValidator.isValidLanguage(p) &&
       ContentValidator.isNotPorn(p);
   }

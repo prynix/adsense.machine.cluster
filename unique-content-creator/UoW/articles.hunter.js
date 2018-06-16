@@ -1,6 +1,5 @@
 const
   ContentValidator = require('./content.validator'),
-  ImageValidator = require('./image.validator'),
   fetch = require('./fetch'),
   { config } = require('../../config'),
   { limits } = config;
@@ -44,7 +43,7 @@ module.exports = class ArticlesHunter {
       index = ArticlesHunter.getRandomIndex(0, paragraphs.length - 1),
       randomParagraph = paragraphs[index];
     paragraphs.splice(index, 1);
-    return randomParagraph || '';
+    return randomParagraph;
   }
 
 
@@ -55,7 +54,6 @@ module.exports = class ArticlesHunter {
     this.headers = [];
     this.paragraphs = [];
     this.images = [];
-
     this.articles = [];
   }
 
@@ -64,12 +62,14 @@ module.exports = class ArticlesHunter {
     const
       { urls } = this,
       { length } = urls;
-    // todo
+
     for (let i = 0; i < length; i++) {
       let notification = `\tarticle № ${i + 1} complete`;
       console.time(notification);
       try {
-        const $ = await fetch(urls[i]);
+        const
+          $ = await fetch(urls[i]),
+          src = 'https://picsum.photos/700/500/?random';
 
         $('h1').each((i, h1) => {
           const header = $(h1).text();
@@ -98,15 +98,17 @@ module.exports = class ArticlesHunter {
           }
         });
 
-        $('img').each(async (i, img) => {
-          const
-            src = $(img).attr('src'),
-            imageValidator = new ImageValidator(src),
-            isValidImage = await imageValidator.isValidImage();
-          if (isValidImage) this.images.push(src);
-        });
+        // $('img').each(async (i, img) => {
+        //   const
+        //     src = $(img).attr('src'),
+        //     imageValidator = new ImageValidator(src),
+        //     isValidImage = await imageValidator.isValidImage();
+        //   if (isValidImage) this.images.push(src);
+        // });
+        this.images.push(src);
       } catch (e) {
         console.error(e);
+        continue;
       }
       console.timeEnd(notification);
     }

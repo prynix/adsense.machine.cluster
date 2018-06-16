@@ -10,18 +10,23 @@ type Site = {
 
 
 
+
+type Navigation = {
+  href: string;
+  header: string;
+};
+
+
 type Article = {
   pathname: string;
-  header: string;
+  title: string;
   img: string;
   categories: Array<string>;
 
-  meta: {
-    author: string;
-    date: string;
-    views: number;
-    comments: number;
-  }
+  navigation: {
+    prev: Navigation;
+    next: Navigation;
+  };
 
   paragraphs: Array<string>;
 };
