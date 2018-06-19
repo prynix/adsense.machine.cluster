@@ -2,7 +2,7 @@ exports.config = {
   mongodb: {
     uri: 'mongodb://127.0.0.1:27017/adsense',
     options: {
-      poolSize: 5
+      poolSize: 15
     }
   },
   log4js: {
