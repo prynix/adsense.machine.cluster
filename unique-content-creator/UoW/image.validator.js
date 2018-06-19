@@ -48,9 +48,13 @@ module.exports = class ImageValidator {
             chunks.push(chunk);
           })
           .on('end', function () {
-            return resolve(
-              sizeOf(Buffer.concat(chunks))
-            );
+            try {
+              return resolve(
+                sizeOf(Buffer.concat(chunks))
+              );
+            } catch (e) {
+              return reject(e);
+            }
           });
       }));
   }
@@ -58,7 +62,7 @@ module.exports = class ImageValidator {
   isValidImageSRC() {
     return this.src &&
       /^http?:\/\/.*\.(?:png|jpg)$/.test(this.src) &&
-      !/(icon|Icon|logo|Logo)/.test(this.src) &&
+      !/(_|icon|logo)/i.test(this.src) &&
       ContentValidator.isValidLanguage(this.src) &&
       ContentValidator.isNotPorn(this.src);
   }
