@@ -20,5 +20,6 @@ $ git clone https://github.com/cr7parker/adsense.machine.cluster.git
 $ service mongod start
 $ npm i
 $ npm run produce-content
+$ npm run produce-nginx-confs
 $ pm2 start index.js
 ```
