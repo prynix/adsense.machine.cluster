@@ -7,12 +7,11 @@
   "dependencies": {
     "cheerio": "1.0.0-rc.2",
     "express": "4.16.3",
-    "google-translate-api": "^2.3.0",
-    "log4js": "2.8.0",
+    "google-translate-api": "2.3.0",
+    "log4js": "2.10.0",
     "mongodb": "3.0.10",
     "pug": "2.0.3",
     "request": "2.87.0",
-    "languagedetect": "1.1.1",
     "image-size": "0.6.3"
   },
   "scripts": {

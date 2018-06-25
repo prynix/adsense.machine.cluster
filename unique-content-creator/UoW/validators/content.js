@@ -1,4 +1,3 @@
-const LanguageDetector = new (require('languagedetect'));
 /*
 *   @see
 *   https://github.com/FGRibreau/node-language-detect

@@ -38,6 +38,7 @@ module.exports = class ContentTranslator {
         this.translatedArticles.push(article);
       } catch (e) {
         console.error(e);
+        continue;
       }
       console.timeEnd(notification);
     }
@@ -48,3 +49,9 @@ module.exports = class ContentTranslator {
     return this.translatedArticles;
   }
 }
+
+
+
+process.on('uncaughtException', function (e) {
+  console.error(e);
+});
