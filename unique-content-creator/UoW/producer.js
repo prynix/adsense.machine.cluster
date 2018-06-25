@@ -1,7 +1,7 @@
 const
   fetch = require('./fetch'),
-  SitesHunter = require('./sites.hunter'),
-  ArticlesHunter = require('./articles.hunter'),
+  SitesHunter = require('./hunters/sites'),
+  ArticlesHunter = require('./hunters/articles'),
   ContentTranslator = require('./content.translator');
 
 

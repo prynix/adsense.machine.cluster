@@ -1,8 +1,8 @@
 const
-  ImageValidator = require('./image.validator'),
-  ContentValidator = require('./content.validator'),
-  fetch = require('./fetch'),
-  { config } = require('../../config'),
+  ImageValidator = require('../validators/image'),
+  ContentValidator = require('../validators/content'),
+  fetch = require('../fetch'),
+  { config } = require('../../../config'),
   { limits } = config;
 
 

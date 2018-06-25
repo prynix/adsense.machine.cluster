@@ -3,7 +3,7 @@ const
   { parse } = require('url'),
   http = require('http'),
   sizeOf = require('image-size'),
-  ContentValidator = require('./content.validator');
+  ContentValidator = require('./content');
 /*
 *   @see
 *   https://github.com/image-size/image-size

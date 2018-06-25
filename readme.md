@@ -14,13 +14,12 @@ $ apt-get install nginx
 $ npm install -g pm2
 ```
 
-### 2. Клонирование репозитория, установка npm пакетов, запуск mongodb:
+### 2. Клонирование репозитория и установка npm пакетов:
 
 ```sh
 $ git clone https://github.com/cr7parker/adsense.machine.cluster.git
 $ cd adsense.machine.cluster
 $ npm i
-$ service mongod start
 ```
 
 ### 3. Генерация контента и nginx конфигов:
@@ -33,6 +32,7 @@ $ npm run produce-nginx-confs
 ### 4. Запуск приложения:
 
 ```sh
+$ service mongod start
 $ pm2 start index.js
 $ service nginx reload
 ```
