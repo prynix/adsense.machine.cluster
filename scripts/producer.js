@@ -1,5 +1,4 @@
 const
-  { dirname } = require('path'),
   { createWriteStream } = require('fs'),
   sites = require('../sites.json'),
   { length } = sites;
