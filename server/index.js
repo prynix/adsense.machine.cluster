@@ -39,7 +39,7 @@ module.exports = class AdsenseServer {
   listen() {
     const { app, port, domain } = this;
     app.listen(port, function () {
-      console.log(`\n Adsense site  ${domain}  run on port  ${port}!`);
+      console.log(`\n Adsense site  http://${domain}  run on port  ${port}!`);
     });
   }
 
