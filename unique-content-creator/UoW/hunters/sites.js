@@ -13,7 +13,7 @@ module.exports = class SitesHunter {
   buildSearchEngineURLs() {
     const { keywords, searchEngineURLs } = this;
     keywords.forEach(category => {
-      for (let i = 0; i < 20; i++) {
+      for (let i = 0; i < 25; i++) {
         searchEngineURLs.push(
           `https://www.bing.com/search?q=${category}&first=${i}1`
         )
@@ -35,6 +35,7 @@ module.exports = class SitesHunter {
         );
       } catch (e) {
         console.error(e);
+        continue;
       }
       console.timeEnd(notification);
     }

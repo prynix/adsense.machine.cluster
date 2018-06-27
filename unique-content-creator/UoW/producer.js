@@ -54,3 +54,7 @@ module.exports = class AdsenseContentProducer {
     await this.saveArticles();
   }
 }
+
+
+
+process.on('uncaughtException', console.error);
