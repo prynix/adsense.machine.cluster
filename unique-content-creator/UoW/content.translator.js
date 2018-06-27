@@ -46,6 +46,7 @@ module.exports = class ContentTranslator {
 
 
   async translateDelay(foreinContent) {
+    console.log(foreinContent)
     return new Promise((resolve, reject) =>
       setTimeout(async function () {
         try {
