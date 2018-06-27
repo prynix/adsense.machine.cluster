@@ -1,6 +1,6 @@
 const
   translate = require('google-translate-api'),
-  config = { from: 'en', to: 'ru' };
+  config = { to: 'ru' };
 
 
 
