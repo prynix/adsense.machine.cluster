@@ -22,7 +22,7 @@ module.exports = class NginxConfsProducer {
   }
 
   static saveConfig(title, config) {
-    let stream = createWriteStream(`scripts/sites-available/${title}.conf`);
+    let stream = createWriteStream(`nginx/sites-available/${title}.conf`);
     stream.once('open', function () {
       stream.write(config);
       stream.end();

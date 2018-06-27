@@ -17,7 +17,7 @@
   "scripts": {
     "start": "node index",
     "produce-content": "node unique-content-creator/index",
-    "produce-nginx-confs":"node scripts/index"
+    "produce-nginx-confs":"node nginx/index"
   },
   "author": "anonymous",
   "license": "MIT"
