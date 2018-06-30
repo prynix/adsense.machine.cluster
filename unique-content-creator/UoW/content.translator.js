@@ -12,6 +12,20 @@ module.exports = class ContentTranslator {
   }
 
 
+  async translateDelay(foreinContent) {
+    return new Promise((resolve, reject) =>
+      setTimeout(async function () {
+        try {
+          const translatedContent = await translate(foreinContent, config);
+          return resolve(translatedContent);
+        } catch (e) {
+          console.error(e);
+          return reject(e);
+        }
+      }, 30 * 1000)
+    );
+  }
+
   async googleTranslate() {
     const
       { articles } = this,
@@ -27,12 +41,12 @@ module.exports = class ContentTranslator {
       if (!article.header) continue;
 
       try {
-        let header = await translate(article.header, config);
+        let header = await this.translateDelay(article.header);
         article.header = header.text;
 
         for (let j = 0; j < len; j++) {
           if (!paragraphs[j]) continue;
-          let paragraph = await translate(paragraphs[j], config);
+          let paragraph = await this.translateDelay(paragraphs[j]);
           paragraphs[j] = paragraph.text;
         }
 
