@@ -14,6 +14,16 @@ module.exports = class AdsenseUniqueContentCreator {
   }
 
 
+  getCollectionsNames(listCollections) {
+    const
+      names = [],
+      { length } = listCollections;
+    for (let i = 0; i < length; i++) {
+      names.push(listCollections[i].s.name);
+    }
+    return names;
+  }
+
   async checkContentExistence() {
     const
       { sites } = this,
@@ -28,21 +38,13 @@ module.exports = class AdsenseUniqueContentCreator {
     }
   }
 
-  produce() {
-    this.needingContentSites.forEach(async (site) => {
-      let contentProducer = new AdsenseContentProducer(site, this.db);
+  async produce() {
+    for (let i = 0; i < this.needingContentSites.length; i++) {
+      let
+        site = this.needingContentSites[i],
+        contentProducer = new AdsenseContentProducer(site, this.db);
       await contentProducer.produce();
-    });
-  }
-
-  getCollectionsNames(listCollections) {
-    const
-      names = [],
-      { length } = listCollections;
-    for (let i = 0; i < length; i++) {
-      names.push(listCollections[i].s.name);
     }
-    return names;
   }
 
 
@@ -52,6 +54,6 @@ module.exports = class AdsenseUniqueContentCreator {
       db = await mongo.init(config.mongodb),
       contentCreator = new AdsenseUniqueContentCreator(sites, db);
     await contentCreator.checkContentExistence();
-    contentCreator.produce();
+    await contentCreator.produce();
   }
 }
