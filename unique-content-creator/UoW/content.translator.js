@@ -12,6 +12,12 @@ module.exports = class ContentTranslator {
   }
 
 
+  getRandomSeconds(min = 5, max = 30) {
+    return 1000 * (min + Math.floor(
+      Math.random() * (max - min + 1)
+    ));
+  }
+
   async translateDelay(foreinContent) {
     return new Promise((resolve, reject) =>
       setTimeout(async function () {
@@ -22,7 +28,7 @@ module.exports = class ContentTranslator {
           console.error(e);
           return reject(e);
         }
-      }, 30 * 1000)
+      }, this.getRandomSeconds())
     );
   }
 
