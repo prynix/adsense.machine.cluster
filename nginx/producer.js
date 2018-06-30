@@ -26,7 +26,7 @@ module.exports = class NginxConfsProducer {
     stream.once('open', function () {
       stream.write(config);
       stream.end();
-      console.log(`\tNginx conf for  ${title}  complete`);
+      console.log(`\tnginx.conf for  ${title}  complete`);
     });
   }
 

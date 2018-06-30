@@ -13,9 +13,9 @@ module.exports = class SitesHunter {
   buildSearchEngineURLs() {
     const { keywords, searchEngineURLs } = this;
     keywords.forEach(category => {
-      for (let i = 0; i < 10; i++) {
+      for (let i = 0; i < 20; i++) {
         searchEngineURLs.push(
-          `https://www.bing.com/search?q=${category}&first=${i}1`
+          `https://www.bing.com/search?q=${category}&first=${i}9`
         )
       }
     });

@@ -14,6 +14,8 @@ module.exports = class ContentValidator {
 
   static beautifyPathname(uglyPathname) {
     return uglyPathname
+      .trimStart()
+      .trimEnd()
       .replace(/\s+/ig, '-')
       .replace(/[.#«»'”:?!\[\]\|&;\$%®@"<>\(\)\+,]/g, '')
       .toLowerCase();
@@ -24,17 +26,14 @@ module.exports = class ContentValidator {
   }
 
   static isValidLanguage(text) {
-    // const langs = LanguageDetector.detect(text);
-    // console.log(langs);
-    // todo
     return !/[\а-яА-Я]+/.test(text) && !/[ÀàÂâÆæÇçÈèÉéÊêËëÎîÏïÔôŒœÙùÛûÜüäöüÄÖÜßéÉèÈêÊ]/.test(text);
   }
 
-  static isValidHeader(h1) {
-    // todo phone numbers   
+  static isValidHeader(header) {
+    let h1 = header.trimStart().trimEnd();
     return h1.length >= 15 &&
       h1.length <= 60 &&
-      !(h1.includes('200') || h1.includes('40')) &&
+      !/(40|200|\[edit\])/.test(h1) &&
       h1.split(' ').length >= 2 &&
       ContentValidator.isValidLanguage(h1) &&
       ContentValidator.isNotPorn(h1);
