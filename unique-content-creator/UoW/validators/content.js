@@ -9,7 +9,9 @@ module.exports = class ContentValidator {
   }
 
   static beautifyParagraph(uglyParagraph) {
-    return uglyParagraph.replace(/\s+/ig, ' ');
+    return uglyParagraph
+      .replace(/\s+/ig, ' ')
+      .replace(/[\[\d\]]/g, '');
   }
 
   static beautifyPathname(uglyPathname) {
@@ -22,11 +24,11 @@ module.exports = class ContentValidator {
   }
 
   static isNotPorn(char) {
-    return !/( fuck | porn | sex | anal | gay | cock | ass | boobs)/.test(char);
+    return !/( fuck | porn | sex | anal | gay | cock | ass | boobs | drugs )/.test(char);
   }
 
   static isValidLanguage(text) {
-    return !/[\а-яА-Я]+/.test(text) && !/[ÀàÂâÆæÇçÈèÉéÊêËëÎîÏïÔôŒœÙùÛûÜüäöüÄÖÜßéÉèÈêÊ]/.test(text);
+    return !/[\а-яА-Я]+/.test(text) && !/[åøÀàÂâÆæÇçÈèÉéÊêËëÎîÏïÔôŒœÙùÛûÜüäöüÄÖÜßéÉèÈêÊ]/.test(text);
   }
 
   static isValidHeader(header) {

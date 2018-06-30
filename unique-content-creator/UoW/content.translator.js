@@ -1,9 +1,10 @@
 const
   translate = require('google-translate-api'),
-  config = { to: 'ru' };
-
-
-
+  config = { from: 'en', to: 'ru' };
+/*
+*   @see
+*   https://github.com/matheuss/google-translate-api
+*/
 module.exports = class ContentTranslator {
   constructor(articles) {
     this.articles = articles;
@@ -26,12 +27,12 @@ module.exports = class ContentTranslator {
       if (!article.header) continue;
 
       try {
-        let header = await this.translateDelay(article.header);
+        let header = await translate(article.header, config);
         article.header = header.text;
 
         for (let j = 0; j < len; j++) {
           if (!paragraphs[j]) continue;
-          let paragraph = await this.translateDelay(paragraphs[j]);
+          let paragraph = await translate(paragraphs[j], config);
           paragraphs[j] = paragraph.text;
         }
 
@@ -42,21 +43,6 @@ module.exports = class ContentTranslator {
       }
       console.timeEnd(notification);
     }
-  }
-
-
-  async translateDelay(foreinContent) {
-    return new Promise((resolve, reject) =>
-      setTimeout(async function () {
-        try {
-          const translatedContent = await translate(foreinContent, config);
-          return resolve(translatedContent);
-        } catch (e) {
-          console.error(e);
-          return reject(e);
-        }
-      }, 5 * 1000)
-    );
   }
 
 

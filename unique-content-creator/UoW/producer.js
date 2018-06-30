@@ -1,5 +1,4 @@
 const
-  fetch = require('./fetch'),
   SitesHunter = require('./hunters/sites'),
   ArticlesHunter = require('./hunters/articles'),
   ContentTranslator = require('./content.translator');
