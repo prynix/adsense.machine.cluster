@@ -29,11 +29,10 @@ module.exports = class AdsenseUniqueContentCreator {
   }
 
   produce() {
-    this.needingContentSites.forEach(site =>
-      process.nextTick(() =>
-        new AdsenseContentProducer(site, this.db).produce()
-      )
-    );
+    this.needingContentSites.forEach(async (site) => {
+      let contentProducer = new AdsenseContentProducer(site, this.db);
+      await contentProducer.produce();
+    });
   }
 
   getCollectionsNames(listCollections) {
