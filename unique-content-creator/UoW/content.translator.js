@@ -10,7 +10,7 @@ module.exports = class ContentTranslator {
   }
 
 
-  translate(foreinContent) {
+  work(foreinContent) {
     return new Promise(function (resolve, reject) {
       translator('en', 'ru', foreinContent, ({ isCorrect, source }) =>
         isCorrect
@@ -35,12 +35,12 @@ module.exports = class ContentTranslator {
       if (!article.header) continue;
 
       try {
-        let header = await this.translate(article.header);
+        let header = await this.work(article.header);
         article.header = header.text;
 
         for (let j = 0; j < len; j++) {
           if (!paragraphs[j]) continue;
-          let paragraph = await this.translate(paragraphs[j]);
+          let paragraph = await this.work(paragraphs[j]);
           paragraphs[j] = paragraph.text;
         }
 
