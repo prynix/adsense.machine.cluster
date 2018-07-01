@@ -8,7 +8,7 @@ module.exports = function fetch(url) {
     request({
       url,
       method: 'GET',
-      timeout: 20000
+      timeout: 10 * 1000
     }, function (error, response, body) {
       if (error) return reject(error);
       return resolve(cheerio.load(body));

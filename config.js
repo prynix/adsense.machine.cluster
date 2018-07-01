@@ -13,7 +13,7 @@ exports.config = {
     replaceConsole: true
   },
   limits: {
-    articles: 40,
-    paragraphs: 8
+    articles: 50,
+    paragraphs: 9
   }
 };

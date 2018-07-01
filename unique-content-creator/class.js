@@ -38,13 +38,12 @@ module.exports = class AdsenseUniqueContentCreator {
     }
   }
 
-  async produce() {
-    for (let i = 0; i < this.needingContentSites.length; i++) {
-      let
-        site = this.needingContentSites[i],
-        contentProducer = new AdsenseContentProducer(site, this.db);
-      await contentProducer.produce();
-    }
+  produce() {
+    this.needingContentSites.forEach(site =>
+      process.nextTick(() =>
+        new AdsenseContentProducer(site, this.db).produce()
+      )
+    );
   }
 
 

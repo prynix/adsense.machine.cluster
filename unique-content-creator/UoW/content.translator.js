@@ -1,9 +1,7 @@
-const
-  translate = require('google-translate-api'),
-  config = { from: 'en', to: 'ru' };
+const translator = require('google-translator');
 /*
 *   @see
-*   https://github.com/matheuss/google-translate-api
+*   https://github.com/731MY/google-translator
 */
 module.exports = class ContentTranslator {
   constructor(articles) {
@@ -12,24 +10,14 @@ module.exports = class ContentTranslator {
   }
 
 
-  getRandomSeconds(min = 5, max = 30) {
-    return 1000 * (min + Math.floor(
-      Math.random() * (max - min + 1)
-    ));
-  }
-
-  async translateDelay(foreinContent) {
-    return new Promise((resolve, reject) =>
-      setTimeout(async function () {
-        try {
-          const translatedContent = await translate(foreinContent, config);
-          return resolve(translatedContent);
-        } catch (e) {
-          console.error(e);
-          return reject(e);
-        }
-      }, this.getRandomSeconds())
-    );
+  translate(foreinContent) {
+    return new Promise(function (resolve, reject) {
+      translator('en', 'ru', foreinContent, ({ isCorrect, source }) =>
+        isCorrect
+          ? resolve(source.pronunciation[0])
+          : reject()
+      );
+    });
   }
 
   async googleTranslate() {
@@ -47,12 +35,12 @@ module.exports = class ContentTranslator {
       if (!article.header) continue;
 
       try {
-        let header = await this.translateDelay(article.header);
+        let header = await this.translate(article.header);
         article.header = header.text;
 
         for (let j = 0; j < len; j++) {
           if (!paragraphs[j]) continue;
-          let paragraph = await this.translateDelay(paragraphs[j]);
+          let paragraph = await this.translate(paragraphs[j]);
           paragraphs[j] = paragraph.text;
         }
 
