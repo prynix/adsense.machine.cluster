@@ -14,7 +14,7 @@ module.exports = class ContentTranslator {
   yandexTranslate(foreinContent) {
     return new Promise(function (resolve, reject) {
       request({
-        url: `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${config.YANDEX_TRANSLATE_API_KEY}&text=${foreinContent}&lang=en-ru&format=plain`,
+        url: `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${config.YANDEX_TRANSLATE_API_KEY}&text=${encodeURIComponent(foreinContent)}&lang=en-ru&format=plain`,
         method: 'GET',
         timeout: 10 * 1000
       }, function (error, response, body) {
