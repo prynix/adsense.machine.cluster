@@ -12,11 +12,11 @@ module.exports = class ContentTranslator {
 
   work(foreinContent) {
     return new Promise(function (resolve, reject) {
-      translator('en', 'ru', foreinContent, ({ isCorrect, source }) =>
-        isCorrect
+      translator('en', 'ru', foreinContent, function ({ isCorrect, source }) {
+        return isCorrect
           ? resolve(source.pronunciation[0])
-          : reject()
-      );
+          : reject();
+      });
     });
   }
 
@@ -36,12 +36,12 @@ module.exports = class ContentTranslator {
 
       try {
         let header = await this.work(article.header);
-        article.header = header.text;
+        article.header = header;
 
         for (let j = 0; j < len; j++) {
           if (!paragraphs[j]) continue;
           let paragraph = await this.work(paragraphs[j]);
-          paragraphs[j] = paragraph.text;
+          paragraphs[j] = paragraph;
         }
 
         this.translatedArticles.push(article);
