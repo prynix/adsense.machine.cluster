@@ -13,7 +13,8 @@ exports.config = {
     replaceConsole: true
   },
   limits: {
-    articles: 40,
+    articles: 30,
     paragraphs: 10
-  }
+  },
+  YANDEX_TRANSLATE_API_KEY: 'trnsl.1.1.20180702T172344Z.01250754f2a93cfe.ba786da5f903c108ab3fe064c4e4fa1a42615888'
 };

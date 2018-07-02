@@ -1,8 +1,9 @@
-const translator = require('google-translator');
-/*
-*   @see
-*   https://github.com/731MY/google-translator
-*/
+const
+  request = require('request'),
+  { config } = require('../../config');
+
+
+
 module.exports = class ContentTranslator {
   constructor(articles) {
     this.articles = articles;
@@ -10,12 +11,15 @@ module.exports = class ContentTranslator {
   }
 
 
-  work(foreinContent) {
+  yandexTranslate(foreinContent) {
     return new Promise(function (resolve, reject) {
-      translator('en', 'ru', foreinContent, function ({ isCorrect, source }) {
-        return isCorrect
-          ? resolve(source.pronunciation[0])
-          : reject();
+      request({
+        url: `https://translate.yandex.net/api/v1.5/tr.json/translate?key=${config.YANDEX_TRANSLATE_API_KEY}&text=${foreinContent}&lang=en-ru&format=plain`,
+        method: 'GET',
+        timeout: 10 * 1000
+      }, function (error, response, body) {
+        if (error) return reject(error);
+        return resolve(JSON.parse(body).text[0]);
       });
     });
   }
@@ -35,12 +39,12 @@ module.exports = class ContentTranslator {
       if (!article.header) continue;
 
       try {
-        let header = await this.work(article.header);
+        let header = await this.yandexTranslate(article.header);
         article.header = header;
 
         for (let j = 0; j < len; j++) {
           if (!paragraphs[j]) continue;
-          let paragraph = await this.work(paragraphs[j]);
+          let paragraph = await this.yandexTranslate(paragraphs[j]);
           paragraphs[j] = paragraph;
         }
 
