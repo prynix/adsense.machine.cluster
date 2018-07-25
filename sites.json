@@ -193,7 +193,7 @@
     "domain": "backend-node-js.ru",
     "title": "backend-node-js",
     "description": "Русскоязычное сообщество node.js разработчиков",
-    "info": "Программная платформа, основанная на движке V8 (транслирующем JavaScript в машинный код), превращающая JavaScript из узкоспециализированного языка в язык общего назначения. Node.js добавляет возможность JavaScript взаимодействовать с устройствами ввода-вывода через свой API (написанный на C++), подключать другие внешние библиотеки, написанные на разных языках, обеспечивая вызовы к ним из JavaScript-кода. Node.js применяется преимущественно на сервере, выполняя роль веб-сервера, но есть возможность разрабатывать на Node.js и десктопные оконные приложения и даже программировать микроконтроллеры. В основе Node.js лежит событийно-ориентированное и асинхронное программирование с неблокирующим вводом/выводом.",
+    "info": "Node или Node.js — программная платформа, основанная на движке V8, превращающая JavaScript из узкоспециализированного языка в язык общего назначения. Node.js использует управляемую асинхронными событиями, неблокирующую модель ввода-вывода. Пакетная экосистема Node.js, npm , является самой большой экосистемой библиотек с открытым исходным кодом в мире.",
     "categories": [
       "business",
       "money",
@@ -211,6 +211,33 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- ewrstdyuhjkmnbv --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"9387875447\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- sghfjhgmjcbv --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"2938302577\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fghdjukykytr --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"5181322535\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
+    ]
+  },
+  {
+    "port": 4009,
+    "domain": "smart-soccer.ru",
+    "title": "smart-soccer",
+    "description": "Лучший информационный сайт рунета о футболе!",
+    "info": "Все самые свежие новости из мира футбола и спортивных ставок!",
+    "categories": [
+      "uefa champions league",
+      "soccer news",
+      "sport news",
+      "UEFA",
+      "football teams",
+      "football stars",
+      "football championships",
+      "2018 mundial in russia",
+      "football transfers",
+      "watch football live",
+      "results of football matches",
+      "sports betting",
+      "betting"
+    ],
+    "advBlocks": [
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4011807862251578\" data-ad-slot=\"6307290618\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4011807862251578\" data-ad-slot=\"6751225004\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4011807862251578\" data-ad-slot=\"8148067156\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   }
 ]
