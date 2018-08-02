@@ -239,5 +239,52 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4011807862251578\" data-ad-slot=\"6751225004\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4011807862251578\" data-ad-slot=\"8148067156\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
+  },
+  {
+    "port": 4009,
+    "domain": "extreme2sport.ru",
+    "title": "extreme2sport",
+    "description": "сообщество любителей экстремального спорта №1 в России",
+    "info": "Мы приглашаем тех, для кого путешествие является настоящей авантюрой. Тех кто, путешествуя, стремится наполнить в первую очередь свою душу. Клуб для тех, кто стремится сделать свою жизнь интересней.",
+    "categories": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "Dodge Charger (1971)",
+      "Ford Torino Cobra (1970)",
+      "Pontiac GTO (1969)"
+     ],
+    "advBlocks": [
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"8487197986\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"3175269352\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"5642059711\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+     ]
+  },
+  {
+    "port": 4010,
+    "domain": "1muscle-cars.ru",
+    "title": "muscle-cars",
+    "description": "класс автомобилей, существовавший в США в середине 1960-х — середине 1970-х годов.",
+    "info": "К классическим маслкарам относятся строго определённые модели среднеразмерных двухдверных седанов, хардтопов и купе, выпущенные преимущественно в период с 1964 по 1973 год и имеющие восьмицилиндровые двигатели большого объёма и мощности. Также часто к ним относят строго определённые модификации более крупных («полноразмерных») и мелких («компактных») моделей той же эпохи. Похожие модели выпускались и до, и после этого периода, но к маслкарам их не относят.",
+    "categories": [ 
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "advBlocks": [
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2039983599644053\" data-ad-slot=\"6998856496\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2039983599644053\" data-ad-slot=\"8324897522\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2039983599644053\" data-ad-slot=\"7941754144\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+     ]
   }
 ]
