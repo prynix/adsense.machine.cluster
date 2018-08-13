@@ -256,12 +256,12 @@
       "SKATEBOADING",
       "SURFING",
       "ABSEILING"
-     ],
+    ],
     "advBlocks": [
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"8487197986\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"3175269352\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"5642059711\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-     ]
+    ]
   },
   {
     "port": 4011,
@@ -269,7 +269,7 @@
     "title": "muscle-cars",
     "description": "класс автомобилей, существовавший в США в середине 1960-х — середине 1970-х годов.",
     "info": "К классическим маслкарам относятся строго определённые модели среднеразмерных двухдверных седанов, хардтопов и купе, выпущенные преимущественно в период с 1964 по 1973 год и имеющие восьмицилиндровые двигатели большого объёма и мощности. Также часто к ним относят строго определённые модификации более крупных («полноразмерных») и мелких («компактных») моделей той же эпохи. Похожие модели выпускались и до, и после этого периода, но к маслкарам их не относят.",
-    "categories": [ 
+    "categories": [
       "muscle car",
       "american car",
       "muscle car Dodge",
@@ -285,36 +285,99 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2039983599644053\" data-ad-slot=\"6998856496\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2039983599644053\" data-ad-slot=\"8324897522\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2039983599644053\" data-ad-slot=\"7941754144\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-     ]
+    ]
   },
   {
     "port": 4012,
     "domain": "my-elite-cars.ru",
     "title": "elite-cars",
-    "description": "",
-    "info": "",
-    "categories": [ 
- 
+    "description": "обзор индустрии элитных автомобилей",
+    "info": "Только у нас Вы найдете все о самых роскошных, быстрых и дорогих автомобилях в мире!",
+    "categories": [
+      "elite cars",
+      "elite cars brands",
+      "by elite cars",
+      "F1 bolids",
+      "F1 season statistics",
+      "most expensive cars in the world",
+      "fastest cars in the world",
+      "most luxurious cars in the world"
     ],
     "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-     ]
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"6604108395\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"4552660121\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"5277734228\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+    ]
   },
   {
     "port": 4013,
     "domain": "high-frequency-trading.ru",
     "title": "high-frequency-trading",
-    "description": "",
-    "info": "",
-    "categories": [ 
- 
+    "description": "разбор техник и алгоритмов заработка на высокочастотном трейдинге.",
+    "info": "Только у нас самые прибыльные и передовые методики заработка на HFT. Самое быстрое опенсорсное C++ ПО.",
+    "categories": [
+      "high-frequency trading DMA",
+      "high-frequency trading software",
+      "HFT traders",
+      "high-frequency trading",
+      "high-frequency trading profits",
+      "high-frequency trading algorithms",
+      "high-frequency trading books",
+      "high-frequency trading companies",
+      "high-frequency trading startups",
+      "high-frequency trading platforms"
     ],
     "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-     ]
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"9921371029\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"2219916922\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"9140548496\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+    ]
+  },
+  {
+    "port": 4014,
+    "domain": "grand-turismo.ru",
+    "title": "grand-turismo",
+    "description": "все о спортивных автомобилях",
+    "info": "К сегменту спортивных автомобилей (альтернативное название «спорткары») относятся легковые авто имеющие (в сравнении с «обычными моделями легковушек»): повышенную мощность двигателя и перенастроенную КПП (наделяющие их лучшими скоростными и динамическими качествами), низкий клиренс и более жесткую подвеску (обеспечивающие «драйверский» характер)",
+    "categories": [
+      "gran turismo",
+      "elite cars",
+      "elite cars brands",
+      "by elite cars",
+      "F1 bolids",
+      "F1 season statistics",
+      "most expensive cars in the world",
+      "fastest cars in the world",
+      "most luxurious cars in the world"
+    ],
+    "advBlocks": [
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"5510518570\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"6604108395\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"8861756013\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+    ]
+  },
+  {
+    "port": 4015,
+    "domain": "learn-hft.ru",
+    "title": "learn-hft",
+    "description": "освой техники и алгоритмы заработка на высокочастотном трейдинге",
+    "info": "Обучение HFT алгоритмам и торговым механикам, самостоятельное написание C++ ПО для трейдинга.",
+    "categories": [
+      "high-frequency trading DMA",
+      "high-frequency trading software",
+      "learn high-frequency trading",
+      "high-frequency trading",
+      "high-frequency trading profits",
+      "high-frequency trading algorithms",
+      "high-frequency trading books",
+      "high-frequency trading companies",
+      "high-frequency trading startups",
+      "high-frequency trading platforms"
+    ],
+    "advBlocks": [
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"3094014899\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"3084499935\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"1014646469\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+    ]
   }
 ]
