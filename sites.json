@@ -1,219 +1,5 @@
 [
   {
-    "port": 4000,
-    "domain": "1lifestyle.ru",
-    "title": "lifestyle",
-    "description": "Барбер клуб для джентельменов",
-    "info": "Лучшие парикмахерские блоги из тысяч лучших журналов Barber в нашем индексе, используя поисковые и социальные показатели. Данные будут обновляться один раз в неделю.",
-    "categories": [
-      "lifestyle",
-      "hipster",
-      "barbers",
-      "barbershop",
-      "bodybuilding",
-      "fitness",
-      "crossfit",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fbsobkpdg --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"2826389459\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fbwrpylpurylmfbvxcbxzd --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"7587761540\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- 56gs1gn6s51b65 --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3225118226443968\" data-ad-slot=\"2650419190\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
-    ]
-  },
-  {
-    "port": 4001,
-    "domain": "jetrade.ru",
-    "title": "jetrade",
-    "description": "непосредственная работа трейдера: анализ текущей ситуации на рынке и заключение торговых сделок.",
-    "info": "Деятельность, осуществляемая с целью хорошего заработка. Такого рода работа выполняется людьми на специальных биржах. Участников этих торгов называют трейдерами. В большинстве случаев играют на таких биржах люди, у которых есть деньги для вложений.",
-    "categories": [
-      "trade",
-      "trading",
-      "HFT",
-      "stock exchange",
-      "business",
-      "enterprise",
-      "market",
-      "sales",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-1386197091762624\" data-ad-slot=\"7777974362\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-1386197091762624\" data-ad-slot=\"9524927039\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-1386197091762624\" data-ad-slot=\"2725792380\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>"
-    ]
-  },
-  {
-    "port": 4002,
-    "domain": "smart-insurance.ru",
-    "title": "insurance",
-    "description": "было выработано три метода создания страховых продуктов — самострахование, взаимное страхование, коммерческое страхование.",
-    "info": "Экономическая сущность страхования состоит в создании страховых фондов за счёт взносов заинтересованных в страховании сторон и предназначенных для возмещения ущерба (чаще всего — у лиц, участвующих в формировании этих фондов). Поскольку возможный ущерб носит вероятностный характер (страховой риск), то происходит перераспределение страхового фонда как в пространстве, так и во времени. Можно сказать, что возмещение ущерба у пострадавших лиц происходит за счёт взносов всех, кто участвовал в формировании этих страховых фондов.",
-    "categories": [
-      "business",
-      "money",
-      "insurance",
-      "allowance",
-      "coverage",
-      "guarantee",
-      "indemnification",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-1386197091762624\" data-ad-slot=\"2001660238\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-1386197091762624\" data-ad-slot=\"1371104845\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-1386197091762624\" data-ad-slot=\"3826302829\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>"
-    ]
-  },
-  {
-    "port": 4003,
-    "domain": "2electricity.ru",
-    "title": "electricity",
-    "description": "создание крупной, технически развитой промышленности, значительное увеличение доли промышленности в экономике.",
-    "info": "Мы процесс ускоренного социально-экономического перехода от традиционного этапа развития к индустриальному, с преобладанием промышленного производства в экономике. Этот процесс связан с развитием новых технологий, особенно в таких отраслях, как энергетика и металлургия. В ходе индустриализации общество также претерпевает некоторые изменения, меняется его мировосприятие. Позитивное отношение к труду в сочетании со стремлением как можно быстрее использовать новые технологии и научные открытия также дают вклад в ускоренный рост производства и доходов населения. В результате образуется все более широкий, в конечном счете, мировой рынок продукции и услуг всех видов, что в свою очередь стимулирует инвестиции и дальнейший экономический рост.",
-    "categories": [
-      "business",
-      "money",
-      "oil",
-      "gas",
-      "electricity",
-      "industrialization",
-      "tycoon",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"5718787233\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"5882438768\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"1769725946\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>"
-    ]
-  },
-  {
-    "port": 4004,
-    "domain": "m0rtgage.ru",
-    "title": "mortgage",
-    "description": "Условия получения ипотечного кредита на покупку квартиры, процентные ставки по ипотеке на жилье, программы, онлайн-заявка на оформление ипотеки, отзывы",
-    "info": "Следует различать понятия «ипотека» и «ипотечное кредитование». Во втором случае кредит выдаётся банком под залог недвижимого имущества. Ипотечный кредит — одна из составляющих ипотечной системы. При получении кредита на покупку недвижимого имущества сама приобретаемая недвижимость поступает в ипотеку (залог) банку как гарантия возврата кредита.",
-    "categories": [
-      "business",
-      "money",
-      "mortgage",
-      "debt",
-      "credit",
-      "finances",
-      "bank",
-      "deed",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"3326350196\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"6499308448\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"7606583979\" data-ad-format=\"auto\"></ins> <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>"
-    ]
-  },
-  {
-    "port": 4005,
-    "domain": "low-lawyer.ru",
-    "title": "lawyer",
-    "description": "добиваются главного: делают жизнь своих клиентов комфортнее и безопаснее и экономят их время и деньги. Мы эффективно и качественно решаем поставленные задачи и предлагаем наиболее оптимальные варианты достижения ваших целей.",
-    "info": "Есть элитные, востребованные адвокаты, которые обычно представляют интересы крупных компаний, банков, политиков, просто богатых людей и которые работают, в основном, с избранным кругом клиентов. Но хотелось бы предупредить читателей МирСоветов: представитель «среднего класса», решивший воспользоваться услугами такого адвоката, рискует получить результат ниже среднего.",
-    "categories": [
-      "business",
-      "money",
-      "jurisprudent",
-      "jurist",
-      "lawyer",
-      "advocate",
-      "counselor",
-      "attorney",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8770149716580845\" data-ad-slot=\"8287032830\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8770149716580845\" data-ad-slot=\"4013170935\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8770149716580845\" data-ad-slot=\"4943109221\" data-ad-format=\"auto\"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>"
-    ]
-  },
-  {
-    "port": 4006,
-    "domain": "atorney.ru",
-    "title": "attorney",
-    "description": "объединение профессиональных адвокатов, имеющих длительную и успешную практику защиты интересов клиентов в уголовных и гражданских делах.",
-    "info": "Перед вами — успешная, надежная и уважаемая команда профессионалов с уникальным опытом, добросовестно выполняющих свою работу.",
-    "categories": [
-      "business",
-      "money",
-      "jurisprudent",
-      "jurist",
-      "lawyer",
-      "advocate",
-      "counselor",
-      "attorney",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fsgfjd456kgrer356 --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8770149716580845\" data-ad-slot=\"3438455869\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fsghdjhgfkj --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8770149716580845\" data-ad-slot=\"2404150762\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- oiukjhdgsbf --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8770149716580845\" data-ad-slot=\"5382092928\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
-    ]
-  },
-  {
-    "port": 4007,
-    "domain": "elite-real-estate.ru",
-    "title": "elite-real-estate",
-    "description": "эталон надежности, стабильности и качества. Край величественных гор и живописных озер. Страна на протяжении многих лет занимающая первые места в рейтингах лучших государств для проживания.",
-    "info": "Это символ комфорта, престижа, безопасности и уюта. Символ респектабельности и благополучия своих владельцев. Во все времена для элитной недвижимости одним из основных критериев оценки считалось месторасположение. Именно по этому большинство элитных квартир расположены в центральной части города и в примыкающих к центру районах.  Они находятся в новых жилых комплексах и престижных жилых домах.  Самые лучшие места, где могли быть возведены дома с элитными квартирами, уже заняты.",
-    "categories": [
-      "business",
-      "money",
-      "elite estate",
-      "real estate",
-      "estate",
-      "cottages",
-      "rich life",
-      "millionaires",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- dsagfh54356758797opiojfhgdfgd --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"2382177455\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fdgshdu578234sfgdjgh --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"2928972360\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- rtyjt46u5kyu46543readsaq --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-3418127543098322\" data-ad-slot=\"5788862008\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
-    ]
-  },
-  {
-    "port": 4008,
-    "domain": "backend-node-js.ru",
-    "title": "backend-node-js",
-    "description": "Русскоязычное сообщество node.js разработчиков",
-    "info": "Node или Node.js — программная платформа, основанная на движке V8, превращающая JavaScript из узкоспециализированного языка в язык общего назначения. Node.js использует управляемую асинхронными событиями, неблокирующую модель ввода-вывода. Пакетная экосистема Node.js, npm , является самой большой экосистемой библиотек с открытым исходным кодом в мире.",
-    "categories": [
-      "business",
-      "money",
-      "javascript",
-      "V8 JavaScript Engine",
-      "node js",
-      "angular 6",
-      "react js",
-      "domain driven design",
-      "software engineering",
-      "to become successful",
-      "earn money"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- ewrstdyuhjkmnbv --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"9387875447\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- sghfjhgmjcbv --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"2938302577\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><!-- fghdjukykytr --><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2022561535192213\" data-ad-slot=\"5181322535\" data-ad-format=\"auto\"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script>"
-    ]
-  },
-  {
     "port": 4009,
     "domain": "smart-soccer.ru",
     "title": "smart-soccer",
@@ -240,29 +26,9 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-4011807862251578\" data-ad-slot=\"8148067156\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   },
-  {
-    "port": 4010,
-    "domain": "extreme2sport.ru",
-    "title": "extreme2sport",
-    "description": "сообщество любителей экстремального спорта №1 в России",
-    "info": "Мы приглашаем тех, для кого путешествие является настоящей авантюрой. Тех кто, путешествуя, стремится наполнить в первую очередь свою душу. Клуб для тех, кто стремится сделать свою жизнь интересней.",
-    "categories": [
-      "extreme sports",
-      "extreme MOUNTAIN BOARDING",
-      "extreme WAKEBOARDING",
-      "extreme PARAGLIDING",
-      "extreme PARASAILING",
-      "PARKOUR",
-      "SKATEBOADING",
-      "SURFING",
-      "ABSEILING"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"8487197986\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"3175269352\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2958080671787787\" data-ad-slot=\"5642059711\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-    ]
-  },
+
+
+
   {
     "port": 4011,
     "domain": "1muscle-cars.ru",
@@ -287,6 +53,9 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2039983599644053\" data-ad-slot=\"7941754144\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   },
+
+
+
   {
     "port": 4012,
     "domain": "my-elite-cars.ru",
@@ -310,6 +79,32 @@
     ]
   },
   {
+    "port": 4014,
+    "domain": "grand-turismo.ru",
+    "title": "grand-turismo",
+    "description": "все о спортивных автомобилях",
+    "info": "К сегменту спортивных автомобилей (альтернативное название «спорткары») относятся легковые авто имеющие (в сравнении с «обычными моделями легковушек»): повышенную мощность двигателя и перенастроенную КПП (наделяющие их лучшими скоростными и динамическими качествами), низкий клиренс и более жесткую подвеску (обеспечивающие «драйверский» характер)",
+    "categories": [
+      "gran turismo",
+      "elite cars",
+      "elite cars brands",
+      "by elite cars",
+      "F1 bolids",
+      "F1 season statistics",
+      "most expensive cars in the world",
+      "fastest cars in the world",
+      "most luxurious cars in the world"
+    ],
+    "advBlocks": [
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"5510518570\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"6604108395\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"8861756013\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+    ]
+  },
+
+
+
+  {
     "port": 4013,
     "domain": "high-frequency-trading.ru",
     "title": "high-frequency-trading",
@@ -331,29 +126,6 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"9921371029\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"2219916922\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"9140548496\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-    ]
-  },
-  {
-    "port": 4014,
-    "domain": "grand-turismo.ru",
-    "title": "grand-turismo",
-    "description": "все о спортивных автомобилях",
-    "info": "К сегменту спортивных автомобилей (альтернативное название «спорткары») относятся легковые авто имеющие (в сравнении с «обычными моделями легковушек»): повышенную мощность двигателя и перенастроенную КПП (наделяющие их лучшими скоростными и динамическими качествами), низкий клиренс и более жесткую подвеску (обеспечивающие «драйверский» характер)",
-    "categories": [
-      "gran turismo",
-      "elite cars",
-      "elite cars brands",
-      "by elite cars",
-      "F1 bolids",
-      "F1 season statistics",
-      "most expensive cars in the world",
-      "fastest cars in the world",
-      "most luxurious cars in the world"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"5510518570\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"6604108395\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2248888880456530\" data-ad-slot=\"8861756013\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   },
   {
@@ -380,6 +152,9 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-8999668703897535\" data-ad-slot=\"1014646469\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   },
+
+
+
   {
     "port": 4016,
     "domain": "american-business.ru",
@@ -428,6 +203,9 @@
       "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-9659849975689889\" data-ad-slot=\"4313761056\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   },
+
+
+
   {
     "port": 4018,
     "domain": "geo-politics.ru",
@@ -447,9 +225,9 @@
       "USA foreign affair"
     ],
     "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-6998061989803972\" data-ad-slot=\"4466508563\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-6998061989803972\" data-ad-slot=\"2630682711\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-6998061989803972\" data-ad-slot=\"5504258067\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   },
   {
@@ -471,80 +249,14 @@
       "USA foreign affair"
     ],
     "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-6998061989803972\" data-ad-slot=\"6900158265\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-6998061989803972\" data-ad-slot=\"8981711911\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-6998061989803972\" data-ad-slot=\"3629312881\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   },
-  {
-    "port": 4020,
-    "domain": "softwarengineering.ru",
-    "title": "software-engineering",
-    "description": "приложение систематического, дисциплинированного, измеримого подхода к разработке, функционированию и сопровождению программного обеспечения, а также исследованию этих подходов; то есть, приложение дисциплины инженерии к программному обеспечению.",
-    "info": "Термин «программная инженерия» появился впервые в 1968 году на конференции НАТО и предназначался для провоцирования поиска решений, происходившего в то время «кризиса программного обеспечения». С тех пор это переросло в профессию программного инженера и область исследований, посвящённых созданию программного обеспечения, более качественного, доступного, лучше поддерживаемого и быстрее разрабатываемого.",
-    "categories": [
-      "software engineering",
-      "software engineering books",
-      "domain driven design",
-      "software development",
-      "software architecture",
-      "Java Enterprise Edition",
-      ".NET enterprise",
-      "enterprise software",
-      "software engineer"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-    ]
-  },
-  {
-    "port": 4021,
-    "domain": "domain-driven-design.ru",
-    "title": "domain-driven-design",
-    "description": "это набор принципов и схем, направленных на создание оптимальных систем объектов. Сводится к созданию программных абстракций, которые называются моделями предметных областей. В эти модели входит бизнес-логика, устанавливающая связь между реальными условиями области применения продукта и кодом.",
-    "info": "Подход DDD особо полезен в ситуациях, когда разработчик не является специалистом в области разрабатываемого продукта. К примеру: программист не может знать все области, в которых требуется создать ПО, но с помощью правильного представления структуры, посредством проблемно-ориентированного подхода, может без труда спроектировать приложение, основываясь на ключевых моментах и знаниях рабочей области.",
-    "categories": [
-      "software engineering",
-      "software engineering books",
-      "domain driven design",
-      "software development",
-      "software architecture",
-      "Java Enterprise Edition",
-      ".NET enterprise",
-      "enterprise software",
-      "software engineer"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-    ]
-  },
-  {
-    "port": 4022,
-    "domain": "enterprise-software.ru",
-    "title": "enterprise-software",
-    "description": "это программное обеспечение предназначено для решения в корпоративных проблемах(скорее чем в ведомственные проблемы)и часто написано использованием в Enterprise Software Architecture.",
-    "info": "Услуги, предоставляемые программным обеспечением предприятия, как правило, бизнес-ориентированные инструменты, такие как интернет - магазины и онлайн - оплаты обработки, интерактивного каталога продукции, автоматизированных систем учета, безопасности, управления бизнес - процессами, управление корпоративным контентом, управление ИТ - услугами, управление взаимоотношениями с клиентами, управления ресурсами предприятия планирование, бизнес-аналитика, управление проектами, сотрудничество, управление персоналом, производство, охрана труда и безопасность, интеграция корпоративных приложений иавтоматизация корпоративных форм.",
-    "categories": [
-      "software engineering",
-      "software engineering books",
-      "domain driven design",
-      "software development",
-      "software architecture",
-      "Java Enterprise Edition",
-      ".NET enterprise",
-      "enterprise software",
-      "software engineer"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-    ]
-  },
+
+
+
   {
     "port": 4023,
     "domain": "by-jewelry.ru",
@@ -563,32 +275,9 @@
       "inessentials sotheby's"
     ],
     "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
-    ]
-  },
-  {
-    "port": 4024,
-    "domain": "by-bijouterie.ru",
-    "title": "by-bijouterie",
-    "description": "красивые украшения из недорогих материалов.",
-    "info": "В производстве используются разнообразные металлы и сплавы, разные сорта прозрачного и цветного стекла, пластмассы, керамики и др. По внешнему виду бижутерия может быть очень похожа на «настоящие» ювелирные изделия, но её стоимость гораздо ниже. Начиная с середины XX века бижутерия, созданная мастерами высокой моды или художниками, стала больше цениться.",
-    "categories": [
-      "about jewelry",
-      "about bijouterie",
-      "luxury jewelry",
-      "luxury bijouterie",
-      "jewelry brands",
-      "bijouterie brands",
-      "luxuries",
-      "inessentials",
-      "inessentials sotheby's"
-    ],
-    "advBlocks": [
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
-      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-?\" data-ad-slot=\"?\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2315594122682767\" data-ad-slot=\"2570138817\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2315594122682767\" data-ad-slot=\"9191387480\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>",
+      "<script async src=\"//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js\"></script><ins class=\"adsbygoogle\" style=\"display:block\" data-ad-client=\"ca-pub-2315594122682767\" data-ad-slot=\"7986117026\" data-ad-format=\"auto\" data-full-width-responsive=\"true\"></ins><script>(adsbygoogle=window.adsbygoogle || []).push({});</script>"
     ]
   }
 ]
